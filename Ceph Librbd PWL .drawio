@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-02-11T08:08:30.548Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36 Edg/98.0.1108.43" etag="Av2HxS3gsbfRb4UAjmgU" version="16.5.6" type="github">
-  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="4658" dy="773" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+<mxfile host="app.diagrams.net" modified="2022-05-18T07:52:28.979Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36" etag="Obu6eH4DFwgPesgzl6E-" version="18.0.5" type="github" pages="2">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="PWL">
+    <mxGraphModel dx="4346" dy="547" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -1431,9 +1431,17 @@
         <mxCell id="vjeUFCcuhLbC6XLOTqGw-190" value="PWL内部流程" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fontSize=12;align=center;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="-1500" y="70" width="230" height="135" as="geometry" />
         </mxCell>
-        <mxCell id="Sf3hM6H7GHPTVNs1SCmV-0" value="中间经过&lt;br&gt;ExclusiveLock&amp;lt;I&amp;gt;::init()进行判断is_pwl_enabled(), 进入插件后，创建cache_state会再次进行判断" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fontSize=12;align=center;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="Sf3hM6H7GHPTVNs1SCmV-0" value="中间经过&lt;br&gt;ExclusiveLock&amp;lt;I&amp;gt;::init()进行判断is_pwl_enabled(), 进入插件后，创建cache_state会再次进行判断" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fontSize=12;align=center;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="-1985" y="600" width="230" height="135" as="geometry" />
         </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="BiGC5ZwQ5-_0eEG2Jqlq" name="IO Layer-Image-Object">
+    <mxGraphModel dx="1038" dy="547" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
       </root>
     </mxGraphModel>
   </diagram>
