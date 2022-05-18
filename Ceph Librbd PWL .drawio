@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-05-18T15:44:16.077Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36" etag="C9XNKnybOuYFf0ZjRrOP" version="18.0.5" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-05-18T16:30:37.910Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36" etag="daOpuB_GdvEMtQTsTapM" version="18.0.5" type="github" pages="3">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="PWL">
     <mxGraphModel dx="4346" dy="547" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1519,6 +1519,53 @@
             <mxPoint x="390" y="300" as="sourcePoint" />
             <mxPoint x="440" y="250" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="BU2FqGcvlGGiVEi2HxtR" name="FIO call rbd">
+    <mxGraphModel dx="1038" dy="547" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="HfX4eFa0RISyM8rG-waV-1" value="fio write" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="30" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HfX4eFa0RISyM8rG-waV-2" value="src/common/async/context_pool.h:63&lt;br&gt;&lt;div&gt;threadvec.emplace_back(make_named_thread(&quot;io_context_pool&quot;,&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;						&lt;/span&gt; [this]() {&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;						&lt;/span&gt;&amp;nbsp; &amp;nbsp;ioctx.run();&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;						&lt;/span&gt; }));&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="170" y="150" width="360" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="HfX4eFa0RISyM8rG-waV-3" value="&lt;div&gt;(gdb) n&lt;/div&gt;&lt;div&gt;59&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; ioctx.restart();&lt;/div&gt;&lt;div&gt;(gdb) p threadcnt&lt;/div&gt;&lt;div&gt;$1 = 2&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="580" y="165" width="200" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="HfX4eFa0RISyM8rG-waV-4" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="780" y="370" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HfX4eFa0RISyM8rG-waV-14" value="&lt;span data-reactroot=&quot;&quot; class=&quot;notion-enable-hover&quot; data-token-index=&quot;0&quot; style=&quot;color:rgba(217, 115, 13, 1);border-bottom:0.05em solid;word-wrap:break-word;font-weight:600;fill:rgba(217, 115, 13, 1)&quot;&gt;src/librbd/AsioEngine.cc&lt;/span&gt;:52&lt;br&gt;AsioEngine::post(Context* ctx, int r)" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="220" y="300" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HfX4eFa0RISyM8rG-waV-15" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="790" y="380" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HfX4eFa0RISyM8rG-waV-16" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="800" y="390" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HfX4eFa0RISyM8rG-waV-17" value="src/librbd/io/Dispatcher.h:129&lt;br&gt;librbd::io::Dispatcher&amp;lt;librbd::ImageCtx, librbd::io::ImageDispatcherInterface&amp;gt;::send" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="210" y="630" width="450" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HfX4eFa0RISyM8rG-waV-18" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="820" y="410" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HfX4eFa0RISyM8rG-waV-19" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="830" y="420" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HfX4eFa0RISyM8rG-waV-20" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="840" y="430" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HfX4eFa0RISyM8rG-waV-21" value="src/librbd/io/ImageDispatchSpec.cc:29&lt;br&gt;librbd::io::ImageDispatchSpec::C_Dispatcher::complete" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="220" y="540" width="310" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HfX4eFa0RISyM8rG-waV-22" value="ASIO" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="220" y="420" width="260" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
