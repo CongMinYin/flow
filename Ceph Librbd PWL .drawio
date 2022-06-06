@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-06-06T14:48:12.221Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Safari/537.36 Edg/102.0.1245.33" etag="sklpjqqA_1yqUsjwDO3v" version="19.0.0" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2022-06-06T14:56:23.112Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Safari/537.36 Edg/102.0.1245.33" etag="3o5PCvr1Z9d8KKF_d016" version="19.0.0" type="github" pages="3">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="PWL">
     <mxGraphModel dx="5370" dy="1121" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1879,29 +1879,50 @@
         <mxCell id="daJ2NDydBngZFMju6xUY-54" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
           <mxGeometry x="4380" y="430" width="260" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="daJ2NDydBngZFMju6xUY-55" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="4390" y="440" width="260" height="60" as="geometry" />
+        <mxCell id="daJ2NDydBngZFMju6xUY-55" value="src\msg\async\AsyncConnection.cc&lt;br&gt;int AsyncConnection::send_message(Message *m)" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="3905" y="1060" width="310" height="60" as="geometry" />
         </mxCell>
         <mxCell id="daJ2NDydBngZFMju6xUY-56" value="调用层次&lt;br&gt;struct Op : public RefCountedObject&lt;br&gt;struct OSDSession : public RefCountedObject&lt;br&gt;ConnectionRef con;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="4250" y="950" width="290" height="60" as="geometry" />
+          <mxGeometry x="4250" y="940" width="290" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="daJ2NDydBngZFMju6xUY-65" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#000000;" edge="1" parent="1" source="daJ2NDydBngZFMju6xUY-57" target="daJ2NDydBngZFMju6xUY-55">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="daJ2NDydBngZFMju6xUY-57" value="构造op msg&lt;br&gt;MOSDOp *m = _prepare_osd_op(op);&lt;br&gt;发送op msg&lt;br&gt;op-&amp;gt;session-&amp;gt;con-&amp;gt;send_message(m);" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
           <mxGeometry x="3930" y="940" width="260" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="daJ2NDydBngZFMju6xUY-69" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#000000;" edge="1" parent="1" source="daJ2NDydBngZFMju6xUY-58" target="daJ2NDydBngZFMju6xUY-59">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="daJ2NDydBngZFMju6xUY-58" value="省略，构造op，下发" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
           <mxGeometry x="3930" y="740" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="daJ2NDydBngZFMju6xUY-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#000000;" edge="1" parent="1" source="daJ2NDydBngZFMju6xUY-59" target="daJ2NDydBngZFMju6xUY-57">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="daJ2NDydBngZFMju6xUY-59" value="void Objecter::_send_op(Op *op)" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
           <mxGeometry x="3930" y="840" width="260" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="daJ2NDydBngZFMju6xUY-66" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#000000;" edge="1" parent="1" source="daJ2NDydBngZFMju6xUY-60" target="daJ2NDydBngZFMju6xUY-58">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="daJ2NDydBngZFMju6xUY-60" value="op_submit(o);" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
           <mxGeometry x="3930" y="640" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="daJ2NDydBngZFMju6xUY-67" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#000000;" edge="1" parent="1" source="daJ2NDydBngZFMju6xUY-61" target="daJ2NDydBngZFMju6xUY-60">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="daJ2NDydBngZFMju6xUY-61" value="&lt;div&gt;&amp;nbsp; void mutate(const object_t&amp;amp; oid, const object_locator_t&amp;amp; oloc,&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; ObjectOperation&amp;amp;&amp;amp; op, const SnapContext&amp;amp; snapc,&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; ceph::real_time mtime, int flags,&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; std::unique_ptr&amp;lt;Op::OpComp&amp;gt;&amp;amp;&amp;amp; oncommit,&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; version_t *objver = NULL, osd_reqid_t reqid = osd_reqid_t(),&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; ZTracer::Trace *parent_trace = nullptr) {&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
           <mxGeometry x="3870" y="490" width="380" height="110" as="geometry" />
         </mxCell>
+        <mxCell id="daJ2NDydBngZFMju6xUY-71" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontColor=#000000;" edge="1" parent="1" source="daJ2NDydBngZFMju6xUY-62" target="daJ2NDydBngZFMju6xUY-61">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="daJ2NDydBngZFMju6xUY-62" value="&lt;div&gt;&amp;nbsp; impl-&amp;gt;objecter-&amp;gt;mutate(&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; *oid, ioc-&amp;gt;oloc, std::move(op-&amp;gt;op), ioc-&amp;gt;snapc,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; mtime, flags,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; std::move(c), objver, osd_reqid_t{}, &amp;amp;trace);&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
           <mxGeometry x="3905" y="390" width="310" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="daJ2NDydBngZFMju6xUY-70" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontColor=#000000;" edge="1" parent="1" source="daJ2NDydBngZFMju6xUY-63" target="daJ2NDydBngZFMju6xUY-62">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="daJ2NDydBngZFMju6xUY-63" value="&lt;div&gt;void RADOS::execute(const Object&amp;amp; o, const IOContext&amp;amp; _ioc, WriteOp&amp;amp;&amp;amp; _op,&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;		&lt;/span&gt;&amp;nbsp; &amp;nbsp; std::unique_ptr&amp;lt;WriteOp::Completion&amp;gt; c, version_t* objver,&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;		&lt;/span&gt;&amp;nbsp; &amp;nbsp; const blkin_trace_info *trace_info) {&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
           <mxGeometry x="3840" y="282.5" width="440" height="65" as="geometry" />
