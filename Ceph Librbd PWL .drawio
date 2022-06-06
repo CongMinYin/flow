@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-06-06T09:20:35.367Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Safari/537.36 Edg/102.0.1245.33" etag="KQTwNS3-AGPZpVpRwxPN" version="19.0.0" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2022-06-06T09:49:02.346Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Safari/537.36 Edg/102.0.1245.33" etag="Bt6SKpdCzOS4AvfCXk5F" version="19.0.0" type="github" pages="3">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="PWL">
     <mxGraphModel dx="5370" dy="1121" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1524,7 +1524,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="BU2FqGcvlGGiVEi2HxtR" name="FIO call rbd">
-    <mxGraphModel dx="595" dy="773" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1235" dy="1121" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1750,8 +1750,8 @@
         <mxCell id="HfX4eFa0RISyM8rG-waV-100" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="HfX4eFa0RISyM8rG-waV-96" target="HfX4eFa0RISyM8rG-waV-95" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-96" value="BOOST::ASIO 继续切线程，可能恰好在同一个线程号上，但不是同步" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-          <mxGeometry x="3045" y="990" width="260" height="60" as="geometry" />
+        <mxCell id="HfX4eFa0RISyM8rG-waV-96" value="BOOST::ASIO 可能在同一个线程上，但不是同步" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="3037.5" y="990" width="275" height="60" as="geometry" />
         </mxCell>
         <mxCell id="HfX4eFa0RISyM8rG-waV-99" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="HfX4eFa0RISyM8rG-waV-97" target="HfX4eFa0RISyM8rG-waV-96" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -1760,10 +1760,10 @@
           <mxGeometry x="2997" y="880" width="355" height="60" as="geometry" />
         </mxCell>
         <mxCell id="HfX4eFa0RISyM8rG-waV-102" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-          <mxGeometry x="3505" y="540" width="260" height="60" as="geometry" />
+          <mxGeometry x="3700" y="1720" width="260" height="60" as="geometry" />
         </mxCell>
         <mxCell id="HfX4eFa0RISyM8rG-waV-103" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-          <mxGeometry x="3515" y="550" width="260" height="60" as="geometry" />
+          <mxGeometry x="3710" y="1730" width="260" height="60" as="geometry" />
         </mxCell>
         <mxCell id="HfX4eFa0RISyM8rG-waV-104" value="正经开始write，使用的回调函数是之前保存的 image_dispatch_spec-&amp;gt;aio_comp" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="3405" y="1210" width="260" height="60" as="geometry" />
@@ -1831,6 +1831,56 @@
         </mxCell>
         <mxCell id="daJ2NDydBngZFMju6xUY-25" value="thread" style="rounded=0;whiteSpace=wrap;html=1;align=left;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="3000" y="40" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="daJ2NDydBngZFMju6xUY-29" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="3710" y="1730" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="daJ2NDydBngZFMju6xUY-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontColor=#000000;" edge="1" parent="1" source="daJ2NDydBngZFMju6xUY-30" target="daJ2NDydBngZFMju6xUY-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="daJ2NDydBngZFMju6xUY-30" value="write_object();" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="3044.5" y="2600" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="daJ2NDydBngZFMju6xUY-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#000000;" edge="1" parent="1" source="daJ2NDydBngZFMju6xUY-31" target="daJ2NDydBngZFMju6xUY-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="daJ2NDydBngZFMju6xUY-31" value="pre_write_object_map_update();" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="3045" y="2500" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="daJ2NDydBngZFMju6xUY-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#000000;" edge="1" parent="1" source="daJ2NDydBngZFMju6xUY-32" target="daJ2NDydBngZFMju6xUY-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="daJ2NDydBngZFMju6xUY-32" value="void AbstractObjectWriteRequest&amp;lt;I&amp;gt;::send()" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="3044.5" y="2400" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="daJ2NDydBngZFMju6xUY-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#000000;" edge="1" parent="1" source="daJ2NDydBngZFMju6xUY-33" target="daJ2NDydBngZFMju6xUY-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="daJ2NDydBngZFMju6xUY-33" value="&lt;div&gt;&amp;nbsp; auto req = new ObjectWriteRequest&amp;lt;I&amp;gt;(m_image_ctx, object_no, object_off,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;std::move(data), io_context, op_flags,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;write_flags, assert_version,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;parent_trace, on_dispatched);&lt;/div&gt;&lt;div&gt;&amp;nbsp; req-&amp;gt;send();&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="2957" y="2280" width="435" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="daJ2NDydBngZFMju6xUY-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontColor=#000000;" edge="1" parent="1" source="daJ2NDydBngZFMju6xUY-34" target="daJ2NDydBngZFMju6xUY-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="daJ2NDydBngZFMju6xUY-34" value="&lt;div&gt;bool operator()(ObjectDispatchSpec::WriteRequest&amp;amp; write) const {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; return object_dispatch-&amp;gt;write(&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="2992.25" y="2180" width="365.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="daJ2NDydBngZFMju6xUY-36" value="&lt;div&gt;&amp;nbsp; image_ctx-&amp;gt;rados_api.execute(&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; {data_object_name(this-&amp;gt;m_ictx, this-&amp;gt;m_object_no)},&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; *this-&amp;gt;m_io_context, std::move(write_op),&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; librbd::asio::util::get_callback_adapter(&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; [this](int r) { handle_write_object(r); }), nullptr,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; (this-&amp;gt;m_trace.valid() ? this-&amp;gt;m_trace.get_info() : nullptr));&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="3019.5" y="2700" width="310" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="daJ2NDydBngZFMju6xUY-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontColor=#FF0000;" edge="1" parent="1" source="daJ2NDydBngZFMju6xUY-37" target="daJ2NDydBngZFMju6xUY-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="daJ2NDydBngZFMju6xUY-40" value="&lt;font color=&quot;#000000&quot;&gt;猜测跟上面一样，通过boost库，触发了write的operate&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#FF0000;" vertex="1" connectable="0" parent="daJ2NDydBngZFMju6xUY-39">
+          <mxGeometry x="-0.1856" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="daJ2NDydBngZFMju6xUY-37" value="&lt;div&gt;void ObjectDispatchSpec::send() {&lt;/div&gt;&lt;div&gt;&amp;nbsp; object_dispatcher-&amp;gt;send(this);&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="3045" y="1870" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="daJ2NDydBngZFMju6xUY-38" value="&lt;div&gt;auto request = create_object_request(oe, io_context, journal_tid,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;single_extent, req_comp);&lt;/div&gt;&lt;div&gt;request-&amp;gt;send();&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="2991.75" y="1760" width="365.5" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
