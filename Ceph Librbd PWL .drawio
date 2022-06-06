@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-05-19T07:15:38.218Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36" etag="4ohBbvgZ6KQoAHlWa0o8" version="18.0.5" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2022-06-06T08:45:48.867Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Safari/537.36 Edg/102.0.1245.33" etag="Ze7PdO4suUoYMt_d_92S" version="19.0.0" type="github" pages="3">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="PWL">
-    <mxGraphModel dx="4346" dy="547" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="5370" dy="1121" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -1524,233 +1524,239 @@
     </mxGraphModel>
   </diagram>
   <diagram id="BU2FqGcvlGGiVEi2HxtR" name="FIO call rbd">
-    <mxGraphModel dx="238" dy="456" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1235" dy="1121" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="HfX4eFa0RISyM8rG-waV-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="HfX4eFa0RISyM8rG-waV-20" target="HfX4eFa0RISyM8rG-waV-32">
+        <mxCell id="HfX4eFa0RISyM8rG-waV-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="HfX4eFa0RISyM8rG-waV-20" target="HfX4eFa0RISyM8rG-waV-32" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-20" value="static void run_threads(struct sk_out *sk_out)" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="HfX4eFa0RISyM8rG-waV-20" value="static void run_threads(struct sk_out *sk_out)" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="1070" y="150" width="260" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="HfX4eFa0RISyM8rG-waV-27" target="HfX4eFa0RISyM8rG-waV-30">
+        <mxCell id="HfX4eFa0RISyM8rG-waV-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="HfX4eFa0RISyM8rG-waV-27" target="HfX4eFa0RISyM8rG-waV-30" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-27" value="while (keep_running(td))&lt;br&gt;用死循环保持线程在运行就不断发送IO&lt;br&gt;td为数据线程：&amp;nbsp;struct thread_data *td = fd-&amp;gt;td;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="HfX4eFa0RISyM8rG-waV-27" value="while (keep_running(td))&lt;br&gt;用死循环保持线程在运行就不断发送IO&lt;br&gt;td为数据线程：&amp;nbsp;struct thread_data *td = fd-&amp;gt;td;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="1380" y="260" width="260" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="HfX4eFa0RISyM8rG-waV-29" target="HfX4eFa0RISyM8rG-waV-42">
+        <mxCell id="HfX4eFa0RISyM8rG-waV-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="HfX4eFa0RISyM8rG-waV-29" target="HfX4eFa0RISyM8rG-waV-42" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-29" value="io_u_submit(td, io_u);" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="HfX4eFa0RISyM8rG-waV-29" value="io_u_submit(td, io_u);" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="1380" y="590" width="260" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="HfX4eFa0RISyM8rG-waV-30" target="HfX4eFa0RISyM8rG-waV-45">
+        <mxCell id="HfX4eFa0RISyM8rG-waV-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="HfX4eFa0RISyM8rG-waV-30" target="HfX4eFa0RISyM8rG-waV-45" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-30" value="do_io(td, bytes_done);" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="HfX4eFa0RISyM8rG-waV-30" value="do_io(td, bytes_done);" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="1380" y="370" width="260" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="HfX4eFa0RISyM8rG-waV-31" target="HfX4eFa0RISyM8rG-waV-27">
+        <mxCell id="HfX4eFa0RISyM8rG-waV-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="HfX4eFa0RISyM8rG-waV-31" target="HfX4eFa0RISyM8rG-waV-27" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-31" value="static void *thread_main(void *data)" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="HfX4eFa0RISyM8rG-waV-31" value="static void *thread_main(void *data)" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="1380" y="150" width="260" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-32" value="&lt;div&gt;ret = pthread_create(&amp;amp;td-&amp;gt;thread, NULL,&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;							&lt;/span&gt;thread_main, fd);&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="HfX4eFa0RISyM8rG-waV-32" value="&lt;div&gt;ret = pthread_create(&amp;amp;td-&amp;gt;thread, NULL,&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;       &lt;/span&gt;thread_main, fd);&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="1070" y="260" width="260" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-34" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="HfX4eFa0RISyM8rG-waV-34" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="1680" y="30" width="260" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-35" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="HfX4eFa0RISyM8rG-waV-35" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="1690" y="40" width="260" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-36" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="HfX4eFa0RISyM8rG-waV-36" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="1700" y="50" width="260" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-74" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="HfX4eFa0RISyM8rG-waV-37" target="HfX4eFa0RISyM8rG-waV-73">
+        <mxCell id="HfX4eFa0RISyM8rG-waV-74" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="HfX4eFa0RISyM8rG-waV-37" target="HfX4eFa0RISyM8rG-waV-73" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-37" value="src/librbd/librbd.cc:6144" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="HfX4eFa0RISyM8rG-waV-37" value="src/librbd/librbd.cc:6144" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="2040" y="150" width="260" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-38" value="&lt;div&gt;rbd_aio_write(rbd-&amp;gt;image, io_u-&amp;gt;offset, io_u-&amp;gt;xfer_buflen,&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;io_u-&amp;gt;xfer_buf, fri-&amp;gt;completion);&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="HfX4eFa0RISyM8rG-waV-38" value="&lt;div&gt;rbd_aio_write(rbd-&amp;gt;image, io_u-&amp;gt;offset, io_u-&amp;gt;xfer_buflen,&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;io_u-&amp;gt;xfer_buf, fri-&amp;gt;completion);&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="1380" y="1020" width="260" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="HfX4eFa0RISyM8rG-waV-39" target="HfX4eFa0RISyM8rG-waV-41">
+        <mxCell id="HfX4eFa0RISyM8rG-waV-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="HfX4eFa0RISyM8rG-waV-39" target="HfX4eFa0RISyM8rG-waV-41" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-39" value="&lt;div style=&quot;color: rgb(212, 212, 212); background-color: rgb(30, 30, 30); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #569cd6;&quot;&gt;FIO_STATIC&lt;/span&gt; &lt;span style=&quot;color: #569cd6;&quot;&gt;struct&lt;/span&gt; &lt;span style=&quot;color: #4ec9b0;&quot;&gt;ioengine_ops&lt;/span&gt; &lt;span style=&quot;color: #9cdcfe;&quot;&gt;ioengine&lt;/span&gt; = {&lt;/div&gt;&lt;div&gt;&amp;nbsp; .name &amp;nbsp; &amp;nbsp; = &lt;span style=&quot;color: #ce9178;&quot;&gt;&quot;rbd&quot;&lt;/span&gt;,&lt;/div&gt;&lt;div&gt;&amp;nbsp; .version &amp;nbsp; &amp;nbsp;= &lt;span style=&quot;color: #569cd6;&quot;&gt;FIO_IOOPS_VERSION&lt;/span&gt;,&lt;/div&gt;&lt;div&gt;&amp;nbsp; .setup &amp;nbsp; &amp;nbsp; &amp;nbsp;= &lt;span style=&quot;color: #dcdcaa;&quot;&gt;fio_rbd_setup&lt;/span&gt;,&lt;/div&gt;&lt;div&gt;&amp;nbsp; .init &amp;nbsp; &amp;nbsp; = &lt;span style=&quot;color: #dcdcaa;&quot;&gt;fio_rbd_init&lt;/span&gt;,&lt;/div&gt;&lt;div&gt;&amp;nbsp; .queue &amp;nbsp; &amp;nbsp; &amp;nbsp;= &lt;span style=&quot;color: #dcdcaa;&quot;&gt;fio_rbd_queue&lt;/span&gt;,&lt;/div&gt;&lt;div&gt;&amp;nbsp; .getevents &amp;nbsp; &amp;nbsp;= &lt;span style=&quot;color: #dcdcaa;&quot;&gt;fio_rbd_getevents&lt;/span&gt;,&lt;/div&gt;&lt;div&gt;&amp;nbsp; .event &amp;nbsp; &amp;nbsp; &amp;nbsp;= &lt;span style=&quot;color: #dcdcaa;&quot;&gt;fio_rbd_event&lt;/span&gt;,&lt;/div&gt;&lt;div&gt;&amp;nbsp; .cleanup &amp;nbsp; &amp;nbsp;= &lt;span style=&quot;color: #dcdcaa;&quot;&gt;fio_rbd_cleanup&lt;/span&gt;,&lt;/div&gt;&lt;div&gt;&amp;nbsp; .open_file &amp;nbsp; &amp;nbsp;= &lt;span style=&quot;color: #dcdcaa;&quot;&gt;fio_rbd_open&lt;/span&gt;,&lt;/div&gt;&lt;div&gt;&amp;nbsp; .invalidate &amp;nbsp; = &lt;span style=&quot;color: #dcdcaa;&quot;&gt;fio_rbd_invalidate&lt;/span&gt;,&lt;/div&gt;&lt;div&gt;&amp;nbsp; .options &amp;nbsp; &amp;nbsp;= &lt;span style=&quot;color: #9cdcfe;&quot;&gt;options&lt;/span&gt;,&lt;/div&gt;&lt;div&gt;&amp;nbsp; .io_u_init &amp;nbsp; &amp;nbsp;= &lt;span style=&quot;color: #dcdcaa;&quot;&gt;fio_rbd_io_u_init&lt;/span&gt;,&lt;/div&gt;&lt;div&gt;&amp;nbsp; .io_u_free &amp;nbsp; &amp;nbsp;= &lt;span style=&quot;color: #dcdcaa;&quot;&gt;fio_rbd_io_u_free&lt;/span&gt;,&lt;/div&gt;&lt;div&gt;&amp;nbsp; .option_struct_size = &lt;span style=&quot;color: #569cd6;&quot;&gt;sizeof&lt;/span&gt;(&lt;span style=&quot;color: #569cd6;&quot;&gt;struct&lt;/span&gt; &lt;span style=&quot;color: #4ec9b0;&quot;&gt;rbd_options&lt;/span&gt;),&lt;/div&gt;&lt;div&gt;};&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="HfX4eFa0RISyM8rG-waV-39" value="&lt;div style=&quot;color: rgb(212, 212, 212); background-color: rgb(30, 30, 30); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #569cd6;&quot;&gt;FIO_STATIC&lt;/span&gt; &lt;span style=&quot;color: #569cd6;&quot;&gt;struct&lt;/span&gt; &lt;span style=&quot;color: #4ec9b0;&quot;&gt;ioengine_ops&lt;/span&gt; &lt;span style=&quot;color: #9cdcfe;&quot;&gt;ioengine&lt;/span&gt; = {&lt;/div&gt;&lt;div&gt;&amp;nbsp; .name &amp;nbsp; &amp;nbsp; = &lt;span style=&quot;color: #ce9178;&quot;&gt;&quot;rbd&quot;&lt;/span&gt;,&lt;/div&gt;&lt;div&gt;&amp;nbsp; .version &amp;nbsp; &amp;nbsp;= &lt;span style=&quot;color: #569cd6;&quot;&gt;FIO_IOOPS_VERSION&lt;/span&gt;,&lt;/div&gt;&lt;div&gt;&amp;nbsp; .setup &amp;nbsp; &amp;nbsp; &amp;nbsp;= &lt;span style=&quot;color: #dcdcaa;&quot;&gt;fio_rbd_setup&lt;/span&gt;,&lt;/div&gt;&lt;div&gt;&amp;nbsp; .init &amp;nbsp; &amp;nbsp; = &lt;span style=&quot;color: #dcdcaa;&quot;&gt;fio_rbd_init&lt;/span&gt;,&lt;/div&gt;&lt;div&gt;&amp;nbsp; .queue &amp;nbsp; &amp;nbsp; &amp;nbsp;= &lt;span style=&quot;color: #dcdcaa;&quot;&gt;fio_rbd_queue&lt;/span&gt;,&lt;/div&gt;&lt;div&gt;&amp;nbsp; .getevents &amp;nbsp; &amp;nbsp;= &lt;span style=&quot;color: #dcdcaa;&quot;&gt;fio_rbd_getevents&lt;/span&gt;,&lt;/div&gt;&lt;div&gt;&amp;nbsp; .event &amp;nbsp; &amp;nbsp; &amp;nbsp;= &lt;span style=&quot;color: #dcdcaa;&quot;&gt;fio_rbd_event&lt;/span&gt;,&lt;/div&gt;&lt;div&gt;&amp;nbsp; .cleanup &amp;nbsp; &amp;nbsp;= &lt;span style=&quot;color: #dcdcaa;&quot;&gt;fio_rbd_cleanup&lt;/span&gt;,&lt;/div&gt;&lt;div&gt;&amp;nbsp; .open_file &amp;nbsp; &amp;nbsp;= &lt;span style=&quot;color: #dcdcaa;&quot;&gt;fio_rbd_open&lt;/span&gt;,&lt;/div&gt;&lt;div&gt;&amp;nbsp; .invalidate &amp;nbsp; = &lt;span style=&quot;color: #dcdcaa;&quot;&gt;fio_rbd_invalidate&lt;/span&gt;,&lt;/div&gt;&lt;div&gt;&amp;nbsp; .options &amp;nbsp; &amp;nbsp;= &lt;span style=&quot;color: #9cdcfe;&quot;&gt;options&lt;/span&gt;,&lt;/div&gt;&lt;div&gt;&amp;nbsp; .io_u_init &amp;nbsp; &amp;nbsp;= &lt;span style=&quot;color: #dcdcaa;&quot;&gt;fio_rbd_io_u_init&lt;/span&gt;,&lt;/div&gt;&lt;div&gt;&amp;nbsp; .io_u_free &amp;nbsp; &amp;nbsp;= &lt;span style=&quot;color: #dcdcaa;&quot;&gt;fio_rbd_io_u_free&lt;/span&gt;,&lt;/div&gt;&lt;div&gt;&amp;nbsp; .option_struct_size = &lt;span style=&quot;color: #569cd6;&quot;&gt;sizeof&lt;/span&gt;(&lt;span style=&quot;color: #569cd6;&quot;&gt;struct&lt;/span&gt; &lt;span style=&quot;color: #4ec9b0;&quot;&gt;rbd_options&lt;/span&gt;),&lt;/div&gt;&lt;div&gt;};&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="950" y="770" width="350" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="HfX4eFa0RISyM8rG-waV-40" target="HfX4eFa0RISyM8rG-waV-38">
+        <mxCell id="HfX4eFa0RISyM8rG-waV-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="HfX4eFa0RISyM8rG-waV-40" target="HfX4eFa0RISyM8rG-waV-38" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-40" value="&lt;div&gt;fio_q_status fio_rbd_queue(struct thread_data *td,&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;struct io_u *io_u)&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="HfX4eFa0RISyM8rG-waV-40" value="&lt;div&gt;fio_q_status fio_rbd_queue(struct thread_data *td,&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;struct io_u *io_u)&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="1380" y="910" width="260" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="HfX4eFa0RISyM8rG-waV-41" target="HfX4eFa0RISyM8rG-waV-40">
+        <mxCell id="HfX4eFa0RISyM8rG-waV-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="HfX4eFa0RISyM8rG-waV-41" target="HfX4eFa0RISyM8rG-waV-40" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-41" value="？？？&lt;br&gt;不知道具体怎么样一个跳转机制&lt;br&gt;但是指定了ioengine为rbd&lt;br&gt;queue为fio_rbd_queue" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="HfX4eFa0RISyM8rG-waV-41" value="？？？&lt;br&gt;不知道具体怎么样一个跳转机制&lt;br&gt;但是指定了ioengine为rbd&lt;br&gt;queue为fio_rbd_queue" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="1380" y="800" width="260" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="HfX4eFa0RISyM8rG-waV-42" target="HfX4eFa0RISyM8rG-waV-41">
+        <mxCell id="HfX4eFa0RISyM8rG-waV-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="HfX4eFa0RISyM8rG-waV-42" target="HfX4eFa0RISyM8rG-waV-41" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-42" value="td_io_queue(td, io_u);&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="HfX4eFa0RISyM8rG-waV-42" value="td_io_queue(td, io_u);&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="1380" y="690" width="260" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-43" value="workqueue_enqueue(&amp;amp;td-&amp;gt;io_wq, &amp;amp;io_u-&amp;gt;work);" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="HfX4eFa0RISyM8rG-waV-43" value="workqueue_enqueue(&amp;amp;td-&amp;gt;io_wq, &amp;amp;io_u-&amp;gt;work);" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="1700" y="480" width="260" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="HfX4eFa0RISyM8rG-waV-45" target="HfX4eFa0RISyM8rG-waV-29">
+        <mxCell id="HfX4eFa0RISyM8rG-waV-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="HfX4eFa0RISyM8rG-waV-45" target="HfX4eFa0RISyM8rG-waV-29" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="HfX4eFa0RISyM8rG-waV-45" target="HfX4eFa0RISyM8rG-waV-43">
+        <mxCell id="HfX4eFa0RISyM8rG-waV-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="HfX4eFa0RISyM8rG-waV-45" target="HfX4eFa0RISyM8rG-waV-43" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-45" value="td-&amp;gt;o.io_submit_mode == IO_MODE_OFFLOAD" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="HfX4eFa0RISyM8rG-waV-45" value="td-&amp;gt;o.io_submit_mode == IO_MODE_OFFLOAD" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1370" y="470" width="280" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-62" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="HfX4eFa0RISyM8rG-waV-62" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="1690" y="40" width="260" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-63" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="HfX4eFa0RISyM8rG-waV-63" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="1700" y="50" width="260" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-64" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="HfX4eFa0RISyM8rG-waV-64" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="1710" y="60" width="260" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-65" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="HfX4eFa0RISyM8rG-waV-65" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="1700" y="50" width="260" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-66" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="1710" y="60" width="260" height="60" as="geometry" />
+        <mxCell id="HfX4eFa0RISyM8rG-waV-66" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="2040" y="40" width="260" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-67" value="在这里调用了基础的请求分发器，并且切换了线程&lt;br&gt;详见send_object_requests的栈调用&lt;br&gt;在后续继续进行若干次这类行为(req = create; req-&amp;gt;send)，同样可能导致切换线程，这是请求的不同层次" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="2340" y="530" width="270" height="100" as="geometry" />
+        <mxCell id="HfX4eFa0RISyM8rG-waV-67" value="在这里调用了基础的请求分发器，并且切换了线程&lt;br&gt;详见send_object_requests的栈调用&lt;br&gt;在后续继续进行若干次这类行为(req = create; req-&amp;gt;send)，同样可能导致切换线程，这是请求的不同层次" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="2340" y="585" width="270" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-68" value="&amp;nbsp; virtual void send(DispatchSpec* dispatch_spec) = 0;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="HfX4eFa0RISyM8rG-waV-68" value="&amp;nbsp; virtual void send(DispatchSpec* dispatch_spec) = 0;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="2040" y="750" width="260" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-69" value="&lt;div&gt;struct ImageDispatcherInterface&lt;/div&gt;&lt;div&gt;&amp;nbsp; : public DispatcherInterface&amp;lt;ImageDispatchInterface&amp;gt; {&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="daJ2NDydBngZFMju6xUY-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="HfX4eFa0RISyM8rG-waV-69" target="HfX4eFa0RISyM8rG-waV-68">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HfX4eFa0RISyM8rG-waV-69" value="&lt;div&gt;struct ImageDispatcherInterface&lt;/div&gt;&lt;div&gt;&amp;nbsp; : public DispatcherInterface&amp;lt;ImageDispatchInterface&amp;gt; {&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="2040" y="650" width="260" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-70" value="&lt;div&gt;void ImageDispatchSpec::send() {&lt;/div&gt;&lt;div&gt;&amp;nbsp; image_dispatcher-&amp;gt;send(this);&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="daJ2NDydBngZFMju6xUY-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="HfX4eFa0RISyM8rG-waV-70" target="HfX4eFa0RISyM8rG-waV-69">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HfX4eFa0RISyM8rG-waV-70" value="&lt;div&gt;void ImageDispatchSpec::send() {&lt;/div&gt;&lt;div&gt;&amp;nbsp; image_dispatcher-&amp;gt;send(this);&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="2040" y="550" width="260" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-77" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="HfX4eFa0RISyM8rG-waV-71" target="HfX4eFa0RISyM8rG-waV-70">
+        <mxCell id="HfX4eFa0RISyM8rG-waV-77" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="HfX4eFa0RISyM8rG-waV-71" target="HfX4eFa0RISyM8rG-waV-70" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-71" value="req = io::ImageDispatchSpec::create_write(&lt;br&gt;req-&amp;gt;send();" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="HfX4eFa0RISyM8rG-waV-71" value="req = io::ImageDispatchSpec::create_write(&lt;br&gt;req-&amp;gt;send();" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="2040" y="450" width="260" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-76" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="HfX4eFa0RISyM8rG-waV-72" target="HfX4eFa0RISyM8rG-waV-71">
+        <mxCell id="HfX4eFa0RISyM8rG-waV-76" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="HfX4eFa0RISyM8rG-waV-72" target="HfX4eFa0RISyM8rG-waV-71" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-72" value="src/librbd/api/Io.cc:244&lt;br&gt;aio_write" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="HfX4eFa0RISyM8rG-waV-72" value="src/librbd/api/Io.cc:244&lt;br&gt;aio_write" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="2040" y="350" width="260" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-75" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="HfX4eFa0RISyM8rG-waV-73" target="HfX4eFa0RISyM8rG-waV-72">
+        <mxCell id="HfX4eFa0RISyM8rG-waV-75" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="HfX4eFa0RISyM8rG-waV-73" target="HfX4eFa0RISyM8rG-waV-72" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-73" value="&lt;div&gt;&amp;nbsp;librbd::api::Io&amp;lt;&amp;gt;::aio_write(&lt;span style=&quot;background-color: initial;&quot;&gt;*ictx, aio_completion, off, len, std::move(bl), 0, true);&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="HfX4eFa0RISyM8rG-waV-73" value="&lt;div&gt;&amp;nbsp;librbd::api::Io&amp;lt;&amp;gt;::aio_write(&lt;span style=&quot;background-color: initial;&quot;&gt;*ictx, aio_completion, off, len, std::move(bl), 0, true);&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="1955" y="250" width="430" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-78" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="HfX4eFa0RISyM8rG-waV-79" target="HfX4eFa0RISyM8rG-waV-81">
+        <mxCell id="HfX4eFa0RISyM8rG-waV-78" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="HfX4eFa0RISyM8rG-waV-79" target="HfX4eFa0RISyM8rG-waV-81" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-79" value="fio调用rbd aio write" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="HfX4eFa0RISyM8rG-waV-79" value="fio调用rbd aio write" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="2835" y="150" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-80" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="HfX4eFa0RISyM8rG-waV-81" target="HfX4eFa0RISyM8rG-waV-85">
+        <mxCell id="HfX4eFa0RISyM8rG-waV-80" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="HfX4eFa0RISyM8rG-waV-81" target="HfX4eFa0RISyM8rG-waV-85" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-81" value="src/common/async/context_pool.h:63&lt;br&gt;&lt;div&gt;threadvec.emplace_back(make_named_thread(&quot;io_context_pool&quot;,&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;						&lt;/span&gt; [this]() {&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;						&lt;/span&gt;&amp;nbsp; &amp;nbsp;ioctx.run();&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;						&lt;/span&gt; }));&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="HfX4eFa0RISyM8rG-waV-81" value="src/common/async/context_pool.h:63&lt;br&gt;&lt;div&gt;threadvec.emplace_back(make_named_thread(&quot;io_context_pool&quot;,&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;      &lt;/span&gt; [this]() {&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;      &lt;/span&gt;&amp;nbsp; &amp;nbsp;ioctx.run();&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;      &lt;/span&gt; }));&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="2715" y="270" width="360" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-82" value="&lt;div&gt;(gdb) n&lt;/div&gt;&lt;div&gt;59&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; ioctx.restart();&lt;/div&gt;&lt;div&gt;(gdb) p threadcnt&lt;/div&gt;&lt;div&gt;$1 = 2&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="HfX4eFa0RISyM8rG-waV-82" value="&lt;div&gt;(gdb) n&lt;/div&gt;&lt;div&gt;59&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; ioctx.restart();&lt;/div&gt;&lt;div&gt;(gdb) p threadcnt&lt;/div&gt;&lt;div&gt;$1 = 2&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="3125" y="285" width="200" height="75" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-109" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="HfX4eFa0RISyM8rG-waV-83" target="HfX4eFa0RISyM8rG-waV-89">
+        <mxCell id="HfX4eFa0RISyM8rG-waV-109" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="HfX4eFa0RISyM8rG-waV-83" target="HfX4eFa0RISyM8rG-waV-89" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-83" value="src/librbd/io/ImageRequest.cc:467&lt;br&gt;librbd::io::AbstractImageWriteRequest&amp;lt;librbd::ImageCtx&amp;gt;::send_request" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="HfX4eFa0RISyM8rG-waV-83" value="src/librbd/io/ImageRequest.cc:467&lt;br&gt;librbd::io::AbstractImageWriteRequest&amp;lt;librbd::ImageCtx&amp;gt;::send_request" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="2697.5" y="1540" width="395" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-84" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="HfX4eFa0RISyM8rG-waV-85" target="HfX4eFa0RISyM8rG-waV-93">
+        <mxCell id="HfX4eFa0RISyM8rG-waV-84" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="HfX4eFa0RISyM8rG-waV-85" target="HfX4eFa0RISyM8rG-waV-93" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-85" value="&lt;span data-reactroot=&quot;&quot; class=&quot;notion-enable-hover&quot; data-token-index=&quot;0&quot; style=&quot;color:rgba(217, 115, 13, 1);border-bottom:0.05em solid;word-wrap:break-word;font-weight:600;fill:rgba(217, 115, 13, 1)&quot;&gt;src/librbd/AsioEngine.cc&lt;/span&gt;:52&lt;br&gt;AsioEngine::post(Context* ctx, int r)" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="HfX4eFa0RISyM8rG-waV-85" value="&lt;span data-reactroot=&quot;&quot; class=&quot;notion-enable-hover&quot; data-token-index=&quot;0&quot; style=&quot;color:rgba(217, 115, 13, 1);border-bottom:0.05em solid;word-wrap:break-word;font-weight:600;fill:rgba(217, 115, 13, 1)&quot;&gt;src/librbd/AsioEngine.cc&lt;/span&gt;:52&lt;br&gt;AsioEngine::post(Context* ctx, int r)" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="2765" y="420" width="260" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-107" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="HfX4eFa0RISyM8rG-waV-86" target="HfX4eFa0RISyM8rG-waV-83">
+        <mxCell id="HfX4eFa0RISyM8rG-waV-107" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="HfX4eFa0RISyM8rG-waV-86" target="HfX4eFa0RISyM8rG-waV-83" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-86" value="src/librbd/io/ImageRequest.cc:309&lt;br&gt;librbd::io::ImageRequest&amp;lt;librbd::ImageCtx&amp;gt;::send" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="HfX4eFa0RISyM8rG-waV-86" value="src/librbd/io/ImageRequest.cc:309&lt;br&gt;librbd::io::ImageRequest&amp;lt;librbd::ImageCtx&amp;gt;::send" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="2757" y="1430" width="275" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-106" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="HfX4eFa0RISyM8rG-waV-87" target="HfX4eFa0RISyM8rG-waV-86">
+        <mxCell id="HfX4eFa0RISyM8rG-waV-106" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="HfX4eFa0RISyM8rG-waV-87" target="HfX4eFa0RISyM8rG-waV-86" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-87" value="src/librbd/io/ImageRequest.cc:247&lt;br&gt;librbd::io::ImageRequest&amp;lt;librbd::ImageCtx&amp;gt;::aio_write" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="HfX4eFa0RISyM8rG-waV-87" value="src/librbd/io/ImageRequest.cc:247&lt;br&gt;librbd::io::ImageRequest&amp;lt;librbd::ImageCtx&amp;gt;::aio_write" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="2747.5" y="1320" width="295" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-98" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="HfX4eFa0RISyM8rG-waV-88" target="HfX4eFa0RISyM8rG-waV-97">
+        <mxCell id="HfX4eFa0RISyM8rG-waV-98" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="HfX4eFa0RISyM8rG-waV-88" target="HfX4eFa0RISyM8rG-waV-97" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-88" value="src/librbd/io/Dispatcher.h:129&lt;br&gt;librbd::io::Dispatcher&amp;lt;librbd::ImageCtx, librbd::io::ImageDispatcherInterface&amp;gt;::send" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="HfX4eFa0RISyM8rG-waV-88" value="src/librbd/io/Dispatcher.h:129&lt;br&gt;librbd::io::Dispatcher&amp;lt;librbd::ImageCtx, librbd::io::ImageDispatcherInterface&amp;gt;::send" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="2670" y="770" width="450" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-89" value="src/librbd/io/ImageRequest.cc:474&lt;br&gt;librbd::io::AbstractImageWriteRequest&amp;lt;librbd::ImageCtx&amp;gt;::send_object_requests" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="HfX4eFa0RISyM8rG-waV-89" value="src/librbd/io/ImageRequest.cc:474&lt;br&gt;librbd::io::AbstractImageWriteRequest&amp;lt;librbd::ImageCtx&amp;gt;::send_object_requests" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="2677" y="1650" width="435" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-90" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="HfX4eFa0RISyM8rG-waV-91" target="HfX4eFa0RISyM8rG-waV-88">
+        <mxCell id="HfX4eFa0RISyM8rG-waV-90" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="HfX4eFa0RISyM8rG-waV-91" target="HfX4eFa0RISyM8rG-waV-88" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-91" value="src/librbd/io/ImageDispatchSpec.cc:29&lt;br&gt;librbd::io::ImageDispatchSpec::C_Dispatcher::complete" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="HfX4eFa0RISyM8rG-waV-91" value="src/librbd/io/ImageDispatchSpec.cc:29&lt;br&gt;librbd::io::ImageDispatchSpec::C_Dispatcher::complete" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="2740" y="660" width="310" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-92" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="HfX4eFa0RISyM8rG-waV-93" target="HfX4eFa0RISyM8rG-waV-91">
+        <mxCell id="HfX4eFa0RISyM8rG-waV-92" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="HfX4eFa0RISyM8rG-waV-93" target="HfX4eFa0RISyM8rG-waV-91" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-93" value="ASIO" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="HfX4eFa0RISyM8rG-waV-93" value="ASIO" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="2765" y="540" width="260" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-105" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="HfX4eFa0RISyM8rG-waV-94" target="HfX4eFa0RISyM8rG-waV-87">
+        <mxCell id="HfX4eFa0RISyM8rG-waV-105" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="HfX4eFa0RISyM8rG-waV-94" target="HfX4eFa0RISyM8rG-waV-87" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-94" value="src/librbd/io/ImageDispatch.cc:68&lt;br&gt;librbd::io::ImageDispatch&amp;lt;librbd::ImageCtx&amp;gt;::write" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="HfX4eFa0RISyM8rG-waV-94" value="src/librbd/io/ImageDispatch.cc:68&lt;br&gt;librbd::io::ImageDispatch&amp;lt;librbd::ImageCtx&amp;gt;::write" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="2757" y="1210" width="275" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-101" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="HfX4eFa0RISyM8rG-waV-95" target="HfX4eFa0RISyM8rG-waV-94">
+        <mxCell id="HfX4eFa0RISyM8rG-waV-101" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="HfX4eFa0RISyM8rG-waV-95" target="HfX4eFa0RISyM8rG-waV-94" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-95" value="src/librbd/io/ImageDispatcher.cc:64&lt;br&gt;librbd::io::ImageDispatcher&amp;lt;librbd::ImageCtx&amp;gt;::SendVisitor::operator()" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="HfX4eFa0RISyM8rG-waV-95" value="src/librbd/io/ImageDispatcher.cc:64&lt;br&gt;librbd::io::ImageDispatcher&amp;lt;librbd::ImageCtx&amp;gt;::SendVisitor::operator()" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="2702" y="1100" width="385" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-100" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="HfX4eFa0RISyM8rG-waV-96" target="HfX4eFa0RISyM8rG-waV-95">
+        <mxCell id="HfX4eFa0RISyM8rG-waV-100" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="HfX4eFa0RISyM8rG-waV-96" target="HfX4eFa0RISyM8rG-waV-95" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-96" value="ASIO" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="HfX4eFa0RISyM8rG-waV-96" value="ASIO" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="2765" y="990" width="260" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-99" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="HfX4eFa0RISyM8rG-waV-97" target="HfX4eFa0RISyM8rG-waV-96">
+        <mxCell id="HfX4eFa0RISyM8rG-waV-99" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="HfX4eFa0RISyM8rG-waV-97" target="HfX4eFa0RISyM8rG-waV-96" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-97" value="src/librbd/io/ImageDispatcher.cc:300&lt;br&gt;librbd::io::ImageDispatcher&amp;lt;librbd::ImageCtx&amp;gt;::send_dispatch" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="HfX4eFa0RISyM8rG-waV-97" value="src/librbd/io/ImageDispatcher.cc:300&lt;br&gt;librbd::io::ImageDispatcher&amp;lt;librbd::ImageCtx&amp;gt;::send_dispatch" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="2717" y="880" width="355" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-102" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="HfX4eFa0RISyM8rG-waV-102" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="3225" y="540" width="260" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-103" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="HfX4eFa0RISyM8rG-waV-103" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="3235" y="550" width="260" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-104" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="HfX4eFa0RISyM8rG-waV-104" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="3245" y="560" width="260" height="60" as="geometry" />
         </mxCell>
       </root>
