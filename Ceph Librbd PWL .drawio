@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-06-07T08:02:57.869Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Safari/537.36" etag="7WiQQWQU5wQ3wmuYkazI" version="18.2.0" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2022-06-07T08:13:01.336Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Safari/537.36" etag="e5UrVQOgIHd8Q9LLGk9W" version="18.2.0" type="github" pages="3">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="PWL">
     <mxGraphModel dx="4586" dy="547" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1940,28 +1940,28 @@
           <mxGeometry x="910" y="1080" width="260" height="60" as="geometry" />
         </mxCell>
         <mxCell id="SjG1W9Pc4g3mqP5jkMTY-5" value="_fio_rbd_connect" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="1035" y="1320" width="260" height="60" as="geometry" />
+          <mxGeometry x="995" y="1310" width="260" height="60" as="geometry" />
         </mxCell>
         <mxCell id="SjG1W9Pc4g3mqP5jkMTY-6" value="extern &quot;C&quot; int LIBRADOS_C_API_DEFAULT_F(rados_connect)(rados_t cluster)" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="955" y="1390" width="430" height="60" as="geometry" />
+          <mxGeometry x="920" y="1410" width="430" height="60" as="geometry" />
         </mxCell>
         <mxCell id="SjG1W9Pc4g3mqP5jkMTY-7" value="int librados::RadosClient::connect()" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="1005" y="1480" width="260" height="60" as="geometry" />
+          <mxGeometry x="995" y="1530" width="260" height="60" as="geometry" />
         </mxCell>
         <mxCell id="SjG1W9Pc4g3mqP5jkMTY-8" value="void common_init_finish(CephContext *cct)" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="1035" y="1560" width="260" height="60" as="geometry" />
+          <mxGeometry x="995" y="1640" width="260" height="60" as="geometry" />
         </mxCell>
         <mxCell id="SjG1W9Pc4g3mqP5jkMTY-9" value="void CephContext::start_service_thread()" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="1025" y="1630" width="260" height="60" as="geometry" />
+          <mxGeometry x="995" y="1760" width="260" height="60" as="geometry" />
         </mxCell>
         <mxCell id="SjG1W9Pc4g3mqP5jkMTY-10" value="&lt;div&gt;void call_observers(std::unique_lock&amp;lt;ceph::recursive_mutex&amp;gt;&amp;amp; locker,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; rev_obs_map_t&amp;amp; rev_obs) {&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="965" y="1730" width="400" height="60" as="geometry" />
+          <mxGeometry x="925" y="1880" width="400" height="60" as="geometry" />
         </mxCell>
         <mxCell id="SjG1W9Pc4g3mqP5jkMTY-11" value="poolctx.start(conf.get_val&amp;lt;std::uint64_t&amp;gt;(&quot;librados_thread_count&quot;));" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="965" y="1900" width="420" height="60" as="geometry" />
+          <mxGeometry x="925" y="2110" width="420" height="60" as="geometry" />
         </mxCell>
         <mxCell id="SjG1W9Pc4g3mqP5jkMTY-12" value="&lt;div&gt;void librados::RadosClient::handle_conf_change(const ConfigProxy&amp;amp; conf,&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;					&lt;/span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;const std::set&amp;lt;std::string&amp;gt; &amp;amp;changed)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="975" y="1810" width="400" height="60" as="geometry" />
+          <mxGeometry x="925" y="1990" width="400" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
