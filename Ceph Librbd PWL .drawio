@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-06-07T08:13:01.336Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Safari/537.36" etag="e5UrVQOgIHd8Q9LLGk9W" version="18.2.0" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2022-06-08T08:45:39.129Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Safari/537.36" etag="OcZPRs_-U7C6aYGtjJyM" version="19.0.1" type="github" pages="3">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="PWL">
-    <mxGraphModel dx="4586" dy="547" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="4812" dy="644" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -1524,7 +1524,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="BU2FqGcvlGGiVEi2HxtR" name="FIO call rbd">
-    <mxGraphModel dx="771" dy="684" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="238" dy="456" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1768,8 +1768,8 @@
         <mxCell id="daJ2NDydBngZFMju6xUY-4" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="1700" y="50" width="260" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="daJ2NDydBngZFMju6xUY-5" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-          <mxGeometry x="1710" y="60" width="260" height="60" as="geometry" />
+        <mxCell id="daJ2NDydBngZFMju6xUY-5" value="external_events.push_back(e);" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="3990" y="1450" width="260" height="60" as="geometry" />
         </mxCell>
         <mxCell id="daJ2NDydBngZFMju6xUY-6" value="&lt;div&gt;void ImageDispatchSpec::C_Dispatcher::complete(int r) {&lt;/div&gt;&lt;div&gt;&amp;nbsp; switch (image_dispatch_spec-&amp;gt;dispatch_result) {&lt;/div&gt;&lt;div&gt;&amp;nbsp; case DISPATCH_RESULT_RESTART:&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; ceph_assert(image_dispatch_spec-&amp;gt;dispatch_layer != 0);&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; image_dispatch_spec-&amp;gt;dispatch_layer = static_cast&amp;lt;ImageDispatchLayer&amp;gt;(&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; image_dispatch_spec-&amp;gt;dispatch_layer - 1);&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; [[fallthrough]];&lt;/div&gt;&lt;div&gt;&amp;nbsp; case DISPATCH_RESULT_CONTINUE:&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; if (r &amp;lt; 0) {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; // bubble dispatch failure through AioCompletion&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; image_dispatch_spec-&amp;gt;dispatch_result = DISPATCH_RESULT_COMPLETE;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; image_dispatch_spec-&amp;gt;fail(r);&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; return;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; }&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &lt;span style=&quot;background-color: rgb(51, 255, 51);&quot;&gt;image_dispatch_spec-&amp;gt;send();&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; break;&lt;/div&gt;&lt;div&gt;&amp;nbsp; case DISPATCH_RESULT_COMPLETE:&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &lt;span style=&quot;background-color: rgb(51, 255, 51);&quot;&gt;finish(r);&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; break;&lt;/div&gt;&lt;div&gt;&amp;nbsp; case DISPATCH_RESULT_INVALID:&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; ceph_abort();&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; break;&lt;/div&gt;&lt;div&gt;&amp;nbsp; }&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="2476.88" y="710" width="356.25" height="460" as="geometry" />
@@ -1876,14 +1876,14 @@
         <mxCell id="daJ2NDydBngZFMju6xUY-38" value="&lt;div&gt;auto request = create_object_request(oe, io_context, journal_tid,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;single_extent, req_comp);&lt;/div&gt;&lt;div&gt;request-&amp;gt;send();&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="2991.75" y="1760" width="365.5" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="daJ2NDydBngZFMju6xUY-54" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-          <mxGeometry x="4380" y="430" width="260" height="60" as="geometry" />
+        <mxCell id="daJ2NDydBngZFMju6xUY-54" value="connection-&amp;gt;center-&amp;gt;dispatch_event_external(connection-&amp;gt;write_handler);" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="3930" y="1250" width="410" height="60" as="geometry" />
         </mxCell>
         <mxCell id="daJ2NDydBngZFMju6xUY-55" value="src\msg\async\AsyncConnection.cc&lt;br&gt;int AsyncConnection::send_message(Message *m)" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="3905" y="1060" width="310" height="60" as="geometry" />
         </mxCell>
         <mxCell id="daJ2NDydBngZFMju6xUY-56" value="调用层次&lt;br&gt;struct Op : public RefCountedObject&lt;br&gt;struct OSDSession : public RefCountedObject&lt;br&gt;ConnectionRef con;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-          <mxGeometry x="4250" y="940" width="290" height="60" as="geometry" />
+          <mxGeometry x="4430" y="950" width="290" height="60" as="geometry" />
         </mxCell>
         <mxCell id="daJ2NDydBngZFMju6xUY-65" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#000000;" parent="1" source="daJ2NDydBngZFMju6xUY-57" target="daJ2NDydBngZFMju6xUY-55" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -1924,44 +1924,251 @@
         <mxCell id="daJ2NDydBngZFMju6xUY-70" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontColor=#000000;" parent="1" source="daJ2NDydBngZFMju6xUY-63" target="daJ2NDydBngZFMju6xUY-62" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="daJ2NDydBngZFMju6xUY-63" value="&lt;div&gt;void RADOS::execute(const Object&amp;amp; o, const IOContext&amp;amp; _ioc, WriteOp&amp;amp;&amp;amp; _op,&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;  &lt;/span&gt;&amp;nbsp; &amp;nbsp; std::unique_ptr&amp;lt;WriteOp::Completion&amp;gt; c, version_t* objver,&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;  &lt;/span&gt;&amp;nbsp; &amp;nbsp; const blkin_trace_info *trace_info) {&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+        <mxCell id="daJ2NDydBngZFMju6xUY-63" value="&lt;div&gt;src/neorados/RADOS.cc&lt;br&gt;&lt;/div&gt;&lt;div&gt;void RADOS::execute(const Object&amp;amp; o, const IOContext&amp;amp; _ioc, WriteOp&amp;amp;&amp;amp; _op,&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;  &lt;/span&gt;&amp;nbsp; &amp;nbsp; std::unique_ptr&amp;lt;WriteOp::Completion&amp;gt; c, version_t* objver,&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;  &lt;/span&gt;&amp;nbsp; &amp;nbsp; const blkin_trace_info *trace_info) {&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="3840" y="282.5" width="440" height="65" as="geometry" />
         </mxCell>
-        <mxCell id="SjG1W9Pc4g3mqP5jkMTY-1" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="SjG1W9Pc4g3mqP5jkMTY-1" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="900" y="1070" width="260" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="SjG1W9Pc4g3mqP5jkMTY-2" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="SjG1W9Pc4g3mqP5jkMTY-2" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="910" y="1080" width="260" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="SjG1W9Pc4g3mqP5jkMTY-3" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="SjG1W9Pc4g3mqP5jkMTY-3" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="1005" y="1160" width="260" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="SjG1W9Pc4g3mqP5jkMTY-4" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="SjG1W9Pc4g3mqP5jkMTY-4" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="910" y="1080" width="260" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="SjG1W9Pc4g3mqP5jkMTY-5" value="_fio_rbd_connect" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="SjG1W9Pc4g3mqP5jkMTY-5" value="_fio_rbd_connect" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="995" y="1310" width="260" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="SjG1W9Pc4g3mqP5jkMTY-6" value="extern &quot;C&quot; int LIBRADOS_C_API_DEFAULT_F(rados_connect)(rados_t cluster)" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="SjG1W9Pc4g3mqP5jkMTY-6" value="extern &quot;C&quot; int LIBRADOS_C_API_DEFAULT_F(rados_connect)(rados_t cluster)" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="920" y="1410" width="430" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="SjG1W9Pc4g3mqP5jkMTY-7" value="int librados::RadosClient::connect()" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="SjG1W9Pc4g3mqP5jkMTY-7" value="int librados::RadosClient::connect()" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="995" y="1530" width="260" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="SjG1W9Pc4g3mqP5jkMTY-8" value="void common_init_finish(CephContext *cct)" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="SjG1W9Pc4g3mqP5jkMTY-8" value="void common_init_finish(CephContext *cct)" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="995" y="1640" width="260" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="SjG1W9Pc4g3mqP5jkMTY-9" value="void CephContext::start_service_thread()" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="SjG1W9Pc4g3mqP5jkMTY-9" value="void CephContext::start_service_thread()" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="995" y="1760" width="260" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="SjG1W9Pc4g3mqP5jkMTY-10" value="&lt;div&gt;void call_observers(std::unique_lock&amp;lt;ceph::recursive_mutex&amp;gt;&amp;amp; locker,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; rev_obs_map_t&amp;amp; rev_obs) {&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="SjG1W9Pc4g3mqP5jkMTY-10" value="&lt;div&gt;void call_observers(std::unique_lock&amp;lt;ceph::recursive_mutex&amp;gt;&amp;amp; locker,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; rev_obs_map_t&amp;amp; rev_obs) {&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="925" y="1880" width="400" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="SjG1W9Pc4g3mqP5jkMTY-11" value="poolctx.start(conf.get_val&amp;lt;std::uint64_t&amp;gt;(&quot;librados_thread_count&quot;));" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="SjG1W9Pc4g3mqP5jkMTY-11" value="poolctx.start(conf.get_val&amp;lt;std::uint64_t&amp;gt;(&quot;librados_thread_count&quot;));" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="925" y="2110" width="420" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="SjG1W9Pc4g3mqP5jkMTY-12" value="&lt;div&gt;void librados::RadosClient::handle_conf_change(const ConfigProxy&amp;amp; conf,&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;					&lt;/span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;const std::set&amp;lt;std::string&amp;gt; &amp;amp;changed)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="SjG1W9Pc4g3mqP5jkMTY-12" value="&lt;div&gt;void librados::RadosClient::handle_conf_change(const ConfigProxy&amp;amp; conf,&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;     &lt;/span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;const std::set&amp;lt;std::string&amp;gt; &amp;amp;changed)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="925" y="1990" width="400" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HxaHLPuzsn73CjZOQ1fi-1" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="4630" y="1450" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HxaHLPuzsn73CjZOQ1fi-2" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="4640" y="1460" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HxaHLPuzsn73CjZOQ1fi-3" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="4650" y="1470" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HxaHLPuzsn73CjZOQ1fi-4" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="4640" y="1460" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HxaHLPuzsn73CjZOQ1fi-5" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="4640" y="1460" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HxaHLPuzsn73CjZOQ1fi-6" value="class EventCallback {" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="4030" y="1580" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HxaHLPuzsn73CjZOQ1fi-7" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="1700" y="50" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HxaHLPuzsn73CjZOQ1fi-8" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="1710" y="60" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HxaHLPuzsn73CjZOQ1fi-9" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="1720" y="70" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HxaHLPuzsn73CjZOQ1fi-10" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="1710" y="60" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HxaHLPuzsn73CjZOQ1fi-11" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="1710" y="60" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HxaHLPuzsn73CjZOQ1fi-12" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="1720" y="70" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HxaHLPuzsn73CjZOQ1fi-13" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="6270" y="420" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HxaHLPuzsn73CjZOQ1fi-14" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="6280" y="430" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HxaHLPuzsn73CjZOQ1fi-15" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="6290" y="440" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HxaHLPuzsn73CjZOQ1fi-16" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="6280" y="430" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HxaHLPuzsn73CjZOQ1fi-17" value="Worker *w = stack-&amp;gt;create_worker(c, worker_id);" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="5140" y="350" width="310" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HxaHLPuzsn73CjZOQ1fi-18" value="回调：&amp;nbsp;&lt;br&gt;std::unique_ptr&amp;lt;Op::OpComp&amp;gt;&amp;amp;&amp;amp; oncommit," style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="4320" y="515" width="310" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UjPMKc73IR1A3mm6ap9C-1" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="4640" y="1460" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UjPMKc73IR1A3mm6ap9C-2" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="4650" y="1470" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UjPMKc73IR1A3mm6ap9C-3" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="4660" y="1480" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UjPMKc73IR1A3mm6ap9C-4" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="4650" y="1470" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UjPMKc73IR1A3mm6ap9C-5" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="4650" y="1470" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UjPMKc73IR1A3mm6ap9C-6" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="6280" y="430" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UjPMKc73IR1A3mm6ap9C-7" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="6290" y="440" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UjPMKc73IR1A3mm6ap9C-8" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="6300" y="450" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UjPMKc73IR1A3mm6ap9C-9" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="6290" y="440" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UjPMKc73IR1A3mm6ap9C-10" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="4650" y="1470" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UjPMKc73IR1A3mm6ap9C-11" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="4660" y="1480" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UjPMKc73IR1A3mm6ap9C-12" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="4670" y="1490" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UjPMKc73IR1A3mm6ap9C-13" value="&lt;div&gt;void ms_fast_dispatch(Message *m) override {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; if (!ms_dispatch(m)) {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; m-&amp;gt;put();&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; }&lt;/div&gt;&lt;div&gt;&amp;nbsp; }&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="4750" y="940" width="310" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="UjPMKc73IR1A3mm6ap9C-14" value="需要调用&lt;br&gt;op-&amp;gt;complete(" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="4440" y="1070" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UjPMKc73IR1A3mm6ap9C-15" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="6290" y="440" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UjPMKc73IR1A3mm6ap9C-16" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="6300" y="450" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UjPMKc73IR1A3mm6ap9C-17" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="6310" y="460" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UjPMKc73IR1A3mm6ap9C-18" value="如果是ms fast reply/dispath，由messager 线程处理，可能是直接处理，也可能是放到队列里&lt;br&gt;如果不是fast，由client的回调处理" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="6270" y="687.5" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UjPMKc73IR1A3mm6ap9C-19" value="stack-&amp;gt;ready();" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="5650" y="282.5" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UjPMKc73IR1A3mm6ap9C-20" value="AsyncMessenger::ready()" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="5650" y="180" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UjPMKc73IR1A3mm6ap9C-21" value="ProtocolV2::ready()" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="5650" y="100" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UjPMKc73IR1A3mm6ap9C-22" value="&lt;div&gt;&amp;nbsp; auto single = &amp;amp;cct-&amp;gt;lookup_or_create_singleton_object&amp;lt;StackSingleton&amp;gt;(&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &quot;AsyncMessenger::NetworkStack::&quot; + transport_type, true, cct);&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="5130" y="180" width="420" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UjPMKc73IR1A3mm6ap9C-23" value="single-&amp;gt;ready(transport_type);&lt;br&gt;struct StackSingleton {&lt;br&gt;stack = NetworkStack::create(cct, type);" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="5150" y="260" width="400" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UjPMKc73IR1A3mm6ap9C-24" value="&lt;div&gt;void Processor::start()&lt;/div&gt;&lt;div&gt;{&lt;/div&gt;&lt;div&gt;&amp;nbsp; ldout(msgr-&amp;gt;cct, 1) &amp;lt;&amp;lt; __func__ &amp;lt;&amp;lt; dendl;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; // start thread&lt;/div&gt;&lt;div&gt;&amp;nbsp; worker-&amp;gt;center.submit_to(worker-&amp;gt;center.get_id(), [this]() {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; for (auto&amp;amp; listen_socket : listen_sockets) {&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;if (listen_socket) {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; if (listen_socket.fd() == -1) {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; ldout(msgr-&amp;gt;cct, 1) &amp;lt;&amp;lt; __func__&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;lt;&amp;lt; &quot; Error: processor restart after listen_socket.fd closed. &quot;&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;lt;&amp;lt; this &amp;lt;&amp;lt; dendl;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; return;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; }&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;&amp;nbsp; worker-&amp;gt;center.create_file_event(listen_socket.fd(), EVENT_READABLE,&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;					&lt;/span&gt;&amp;nbsp; &amp;nbsp;listen_handler); }&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; }&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; }, false);&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="5650" y="575" width="540" height="285" as="geometry" />
+        </mxCell>
+        <mxCell id="UjPMKc73IR1A3mm6ap9C-25" value="void Processor::start()" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="5650" y="490" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UjPMKc73IR1A3mm6ap9C-26" value="int err = bindv(pending_bind_addrs);" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="5650" y="390" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UjPMKc73IR1A3mm6ap9C-27" value="构造的时候&lt;br&gt;AsyncMessenger::AsyncMessenger(CephContext *cct, entity_name_t name," style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="5120" y="100" width="425" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UjPMKc73IR1A3mm6ap9C-28" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="6270" y="390" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UjPMKc73IR1A3mm6ap9C-29" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="6280" y="400" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UjPMKc73IR1A3mm6ap9C-30" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="6290" y="410" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UjPMKc73IR1A3mm6ap9C-31" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="6280" y="400" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UjPMKc73IR1A3mm6ap9C-32" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="6280" y="400" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UjPMKc73IR1A3mm6ap9C-33" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="6290" y="410" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UjPMKc73IR1A3mm6ap9C-34" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="6300" y="420" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UjPMKc73IR1A3mm6ap9C-35" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="6290" y="410" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UjPMKc73IR1A3mm6ap9C-36" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="6290" y="410" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UjPMKc73IR1A3mm6ap9C-37" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="6300" y="420" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UjPMKc73IR1A3mm6ap9C-38" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="6310" y="430" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UjPMKc73IR1A3mm6ap9C-39" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="6300" y="420" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UjPMKc73IR1A3mm6ap9C-40" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="6270" y="370" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UjPMKc73IR1A3mm6ap9C-41" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="6280" y="380" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UjPMKc73IR1A3mm6ap9C-42" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="6290" y="390" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UjPMKc73IR1A3mm6ap9C-43" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="6280" y="380" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UjPMKc73IR1A3mm6ap9C-44" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="6280" y="380" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UjPMKc73IR1A3mm6ap9C-45" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="6290" y="390" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UjPMKc73IR1A3mm6ap9C-46" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="6300" y="400" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UjPMKc73IR1A3mm6ap9C-47" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="6290" y="390" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UjPMKc73IR1A3mm6ap9C-48" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="6290" y="390" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UjPMKc73IR1A3mm6ap9C-49" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="6300" y="400" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UjPMKc73IR1A3mm6ap9C-50" value="void DispatchQueue::fast_dispatch(const ref_t&amp;lt;Message&amp;gt;&amp;amp; m)" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="4790" y="820" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UjPMKc73IR1A3mm6ap9C-51" value="&lt;div&gt;回调由事件驱动&amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;bool Objecter::ms_dispatch(Message *m)&lt;br&gt;&lt;/div&gt;&lt;div&gt;void Objecter::handle_osd_op_reply(MOSDOpReply *m)&lt;/div&gt;&lt;div&gt;// do callbacks&lt;/div&gt;&lt;div&gt;&amp;nbsp; if (Op::has_completion(onfinish)) {&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="4740" y="1070" width="400" height="100" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
