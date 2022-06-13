@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-06-13T06:48:09.896Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Safari/537.36 Edg/102.0.1245.39" etag="Dj_r_Bbr8LbGOwS5et4Q" version="20.0.0" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2022-06-13T06:59:46.975Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Safari/537.36 Edg/102.0.1245.39" etag="oCreC3Llcnoajdp6bRHu" version="20.0.0" type="github" pages="3">
   <diagram id="BU2FqGcvlGGiVEi2HxtR" name="FIO call rbd">
-    <mxGraphModel dx="2062" dy="1121" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1718" dy="934" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -54,6 +54,14 @@
         </mxCell>
         <mxCell id="HfX4eFa0RISyM8rG-waV-37" value="src/librbd/librbd.cc&lt;br&gt;extern &quot;C&quot; int rbd_aio_write()" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="2040" y="150" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tr-M7fvBiXceQsFCyTLG-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="HfX4eFa0RISyM8rG-waV-38" target="HfX4eFa0RISyM8rG-waV-37">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1990" y="1050" />
+              <mxPoint x="1990" y="180" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="HfX4eFa0RISyM8rG-waV-38" value="&lt;div&gt;rbd_aio_write(rbd-&amp;gt;image, io_u-&amp;gt;offset, io_u-&amp;gt;xfer_buflen,&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;io_u-&amp;gt;xfer_buf, fri-&amp;gt;completion);&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="1380" y="1020" width="260" height="60" as="geometry" />
@@ -109,10 +117,10 @@
         <mxCell id="daJ2NDydBngZFMju6xUY-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="HfX4eFa0RISyM8rG-waV-65" target="HfX4eFa0RISyM8rG-waV-63" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-65" value="经过一系列联系，调用到最基层的src\librbd\io\Dispatcher.h&lt;br&gt;&lt;br&gt;void send(DispatchSpec* dispatch_spec) {" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-          <mxGeometry x="2040" y="850" width="260" height="60" as="geometry" />
+        <mxCell id="HfX4eFa0RISyM8rG-waV-65" value="经过一层层image层方法调用，直到处理请求的层次，然后调用层次各自的方法，比如调用post()切换线程处理写请求&lt;br&gt;src\librbd\io\Dispatcher.h&lt;br&gt;void send(DispatchSpec* dispatch_spec) {" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="2010" y="850" width="320" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-66" value="thread" style="rounded=0;whiteSpace=wrap;html=1;align=left;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+        <mxCell id="HfX4eFa0RISyM8rG-waV-66" value="thread: fio" style="rounded=0;whiteSpace=wrap;html=1;align=left;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
           <mxGeometry x="2040" y="40" width="260" height="60" as="geometry" />
         </mxCell>
         <mxCell id="daJ2NDydBngZFMju6xUY-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;shape=link;" parent="1" source="HfX4eFa0RISyM8rG-waV-67" target="HfX4eFa0RISyM8rG-waV-91" edge="1">
@@ -121,7 +129,7 @@
         <mxCell id="daJ2NDydBngZFMju6xUY-28" style="edgeStyle=orthogonalEdgeStyle;shape=link;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontColor=#FF0000;" parent="1" source="HfX4eFa0RISyM8rG-waV-67" target="daJ2NDydBngZFMju6xUY-6" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-67" value="在这里调用了基础的请求分发器，并且使用了boost库切换了线程&lt;br&gt;详见send_object_requests的栈调用，流程在右边&lt;br&gt;在后续继续进行若干次这类行为(req = create; req-&amp;gt;send)，同样可能导致切换线程，循环send" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+        <mxCell id="HfX4eFa0RISyM8rG-waV-67" value="在这里调用了基础的请求分发器，在image层一层层地进行分发，直到某一层进行了处理，处理时会调用boost库post方法切换线程到io_context——pool进行具体的写操作等" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="2520" y="585" width="270" height="100" as="geometry" />
         </mxCell>
         <mxCell id="HfX4eFa0RISyM8rG-waV-68" value="&amp;nbsp; virtual void send(DispatchSpec* dispatch_spec) = 0;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
@@ -164,34 +172,34 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="HfX4eFa0RISyM8rG-waV-81" value="src/common/async/context_pool.h:63&lt;br&gt;&lt;div&gt;threadvec.emplace_back(make_named_thread(&quot;io_context_pool&quot;,&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;      &lt;/span&gt; [this]() {&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;      &lt;/span&gt;&amp;nbsp; &amp;nbsp;ioctx.run();&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;      &lt;/span&gt; }));&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-          <mxGeometry x="2995" y="270" width="360" height="90" as="geometry" />
+          <mxGeometry x="3352" y="270" width="360" height="90" as="geometry" />
         </mxCell>
         <mxCell id="HfX4eFa0RISyM8rG-waV-82" value="&lt;div&gt;(gdb) n&lt;/div&gt;&lt;div&gt;59&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; ioctx.restart();&lt;/div&gt;&lt;div&gt;(gdb) p threadcnt&lt;/div&gt;&lt;div&gt;$1 = 2&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-          <mxGeometry x="3405" y="277.5" width="200" height="75" as="geometry" />
+          <mxGeometry x="3112.5" y="277.5" width="200" height="75" as="geometry" />
         </mxCell>
         <mxCell id="HfX4eFa0RISyM8rG-waV-109" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="HfX4eFa0RISyM8rG-waV-83" target="HfX4eFa0RISyM8rG-waV-89" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="HfX4eFa0RISyM8rG-waV-83" value="src/librbd/io/ImageRequest.cc:467&lt;br&gt;librbd::io::AbstractImageWriteRequest&amp;lt;librbd::ImageCtx&amp;gt;::send_request" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-          <mxGeometry x="2977.5" y="1540" width="395" height="60" as="geometry" />
+          <mxGeometry x="3335" y="1575" width="395" height="60" as="geometry" />
         </mxCell>
         <mxCell id="HfX4eFa0RISyM8rG-waV-84" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="HfX4eFa0RISyM8rG-waV-85" target="HfX4eFa0RISyM8rG-waV-93" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="HfX4eFa0RISyM8rG-waV-85" value="&lt;span data-reactroot=&quot;&quot; class=&quot;notion-enable-hover&quot; data-token-index=&quot;0&quot; style=&quot;color:rgba(217, 115, 13, 1);border-bottom:0.05em solid;word-wrap:break-word;font-weight:600;fill:rgba(217, 115, 13, 1)&quot;&gt;src/librbd/AsioEngine.cc&lt;/span&gt;:52&lt;br&gt;AsioEngine::post(Context* ctx, int r)" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-          <mxGeometry x="3045" y="420" width="260" height="60" as="geometry" />
+          <mxGeometry x="3402" y="420" width="260" height="60" as="geometry" />
         </mxCell>
         <mxCell id="HfX4eFa0RISyM8rG-waV-107" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="HfX4eFa0RISyM8rG-waV-86" target="HfX4eFa0RISyM8rG-waV-83" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="HfX4eFa0RISyM8rG-waV-86" value="src/librbd/io/ImageRequest.cc:309&lt;br&gt;librbd::io::ImageRequest&amp;lt;librbd::ImageCtx&amp;gt;::send" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-          <mxGeometry x="3037" y="1430" width="275" height="60" as="geometry" />
+          <mxGeometry x="3394.5" y="1465" width="275" height="60" as="geometry" />
         </mxCell>
         <mxCell id="HfX4eFa0RISyM8rG-waV-106" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="HfX4eFa0RISyM8rG-waV-87" target="HfX4eFa0RISyM8rG-waV-86" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="HfX4eFa0RISyM8rG-waV-87" value="src/librbd/io/ImageRequest.cc:247&lt;br&gt;librbd::io::ImageRequest&amp;lt;librbd::ImageCtx&amp;gt;::aio_write" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-          <mxGeometry x="3027.5" y="1320" width="295" height="60" as="geometry" />
+          <mxGeometry x="3384" y="1365" width="295" height="60" as="geometry" />
         </mxCell>
         <mxCell id="HfX4eFa0RISyM8rG-waV-98" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="HfX4eFa0RISyM8rG-waV-88" target="HfX4eFa0RISyM8rG-waV-97" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -200,7 +208,7 @@
           <mxGeometry x="2950" y="770" width="450" height="60" as="geometry" />
         </mxCell>
         <mxCell id="HfX4eFa0RISyM8rG-waV-89" value="src/librbd/io/ImageRequest.cc:474&lt;br&gt;librbd::io::AbstractImageWriteRequest&amp;lt;librbd::ImageCtx&amp;gt;::send_object_requests" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-          <mxGeometry x="2957" y="1650" width="435" height="60" as="geometry" />
+          <mxGeometry x="3314.5" y="1685" width="435" height="60" as="geometry" />
         </mxCell>
         <mxCell id="HfX4eFa0RISyM8rG-waV-90" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="HfX4eFa0RISyM8rG-waV-91" target="HfX4eFa0RISyM8rG-waV-88" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -208,38 +216,31 @@
         <mxCell id="HfX4eFa0RISyM8rG-waV-91" value="src/librbd/io/ImageDispatchSpec.cc:29&lt;br&gt;librbd::io::ImageDispatchSpec::C_Dispatcher::complete" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="3020" y="660" width="310" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-92" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="HfX4eFa0RISyM8rG-waV-93" target="HfX4eFa0RISyM8rG-waV-91" edge="1">
+        <mxCell id="tr-M7fvBiXceQsFCyTLG-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="HfX4eFa0RISyM8rG-waV-93" target="UjPMKc73IR1A3mm6ap9C-12">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="HfX4eFa0RISyM8rG-waV-93" value="ASIO" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-          <mxGeometry x="3045" y="540" width="260" height="60" as="geometry" />
+          <mxGeometry x="3402" y="540" width="260" height="60" as="geometry" />
         </mxCell>
         <mxCell id="HfX4eFa0RISyM8rG-waV-105" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="HfX4eFa0RISyM8rG-waV-94" target="HfX4eFa0RISyM8rG-waV-87" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="HfX4eFa0RISyM8rG-waV-94" value="src/librbd/io/ImageDispatch.cc:68&lt;br&gt;librbd::io::ImageDispatch&amp;lt;librbd::ImageCtx&amp;gt;::write" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-          <mxGeometry x="3037" y="1210" width="275" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-101" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="HfX4eFa0RISyM8rG-waV-95" target="HfX4eFa0RISyM8rG-waV-94" edge="1">
-          <mxGeometry relative="1" as="geometry" />
+          <mxGeometry x="3394" y="1245" width="275" height="60" as="geometry" />
         </mxCell>
         <mxCell id="HfX4eFa0RISyM8rG-waV-95" value="src/librbd/io/ImageDispatcher.cc:64&lt;br&gt;librbd::io::ImageDispatcher&amp;lt;librbd::ImageCtx&amp;gt;::SendVisitor::operator()" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-          <mxGeometry x="2982" y="1100" width="385" height="60" as="geometry" />
+          <mxGeometry x="2981.75" y="990" width="385" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-100" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="HfX4eFa0RISyM8rG-waV-96" target="HfX4eFa0RISyM8rG-waV-95" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-96" value="BOOST::ASIO 可能在同一个线程上，但不是同步" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-          <mxGeometry x="3037.5" y="990" width="275" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="HfX4eFa0RISyM8rG-waV-99" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="HfX4eFa0RISyM8rG-waV-97" target="HfX4eFa0RISyM8rG-waV-96" edge="1">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="HfX4eFa0RISyM8rG-waV-99" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="HfX4eFa0RISyM8rG-waV-97" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="3175" y="990" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="HfX4eFa0RISyM8rG-waV-97" value="src/librbd/io/ImageDispatcher.cc:300&lt;br&gt;librbd::io::ImageDispatcher&amp;lt;librbd::ImageCtx&amp;gt;::send_dispatch" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="2997" y="880" width="355" height="60" as="geometry" />
         </mxCell>
         <mxCell id="HfX4eFa0RISyM8rG-waV-104" value="正经开始write，使用的回调函数是之前保存的 image_dispatch_spec-&amp;gt;aio_comp" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-          <mxGeometry x="3405" y="1210" width="260" height="60" as="geometry" />
+          <mxGeometry x="2697" y="1240" width="260" height="60" as="geometry" />
         </mxCell>
         <mxCell id="daJ2NDydBngZFMju6xUY-3" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="1690" y="40" width="260" height="60" as="geometry" />
@@ -302,8 +303,8 @@
         <mxCell id="daJ2NDydBngZFMju6xUY-17" value="return true" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="2040" y="1500" width="260" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="daJ2NDydBngZFMju6xUY-25" value="thread" style="rounded=0;whiteSpace=wrap;html=1;align=left;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
-          <mxGeometry x="3000" y="40" width="260" height="60" as="geometry" />
+        <mxCell id="daJ2NDydBngZFMju6xUY-25" value="thread: Io_context_pool" style="rounded=0;whiteSpace=wrap;html=1;align=left;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="3405" y="150" width="260" height="60" as="geometry" />
         </mxCell>
         <mxCell id="daJ2NDydBngZFMju6xUY-29" value="回调handle_write_object" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="3430" y="2740" width="260" height="60" as="geometry" />
@@ -353,7 +354,7 @@
           <mxGeometry x="3045" y="1870" width="260" height="60" as="geometry" />
         </mxCell>
         <mxCell id="daJ2NDydBngZFMju6xUY-38" value="&lt;div&gt;auto request = create_object_request(oe, io_context, journal_tid,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;single_extent, req_comp);&lt;/div&gt;&lt;div&gt;request-&amp;gt;send();&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-          <mxGeometry x="2991.75" y="1760" width="365.5" height="60" as="geometry" />
+          <mxGeometry x="3349.25" y="1795" width="365.5" height="60" as="geometry" />
         </mxCell>
         <mxCell id="daJ2NDydBngZFMju6xUY-54" value="connection-&amp;gt;center-&amp;gt;dispatch_event_external(connection-&amp;gt;write_handler);" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="3930" y="1250" width="410" height="60" as="geometry" />
@@ -571,8 +572,11 @@
         <mxCell id="UjPMKc73IR1A3mm6ap9C-11" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="4660" y="1480" width="260" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="UjPMKc73IR1A3mm6ap9C-12" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-          <mxGeometry x="4670" y="1490" width="260" height="60" as="geometry" />
+        <mxCell id="tr-M7fvBiXceQsFCyTLG-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="UjPMKc73IR1A3mm6ap9C-12" target="HfX4eFa0RISyM8rG-waV-94">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UjPMKc73IR1A3mm6ap9C-12" value="在某一个image层能够处理请求，并且调用到了具体的该层次的write函数，然后可能是通过post映射到最基础的write函数，也可能是像cache一样直接处理" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="3401.5" y="1125" width="260" height="60" as="geometry" />
         </mxCell>
         <mxCell id="UjPMKc73IR1A3mm6ap9C-13" value="&lt;div&gt;void ms_fast_dispatch(Message *m) override {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; if (!ms_dispatch(m)) {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; m-&amp;gt;put();&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; }&lt;/div&gt;&lt;div&gt;&amp;nbsp; }&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="4750" y="940" width="310" height="100" as="geometry" />
@@ -825,6 +829,12 @@
         </mxCell>
         <mxCell id="tr-M7fvBiXceQsFCyTLG-16" value="messenger = Messenger::create_client_messenger(cct, &quot;radosclient&quot;);&lt;br&gt;&lt;div&gt;messenger-&amp;gt;start();&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
           <mxGeometry x="1800" y="1780" width="380" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tr-M7fvBiXceQsFCyTLG-32" value="thread: fio" style="rounded=0;whiteSpace=wrap;html=1;align=left;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="1380" y="50" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tr-M7fvBiXceQsFCyTLG-34" value="connect 流程，用于启动各自线程和构造对象" style="rounded=0;whiteSpace=wrap;html=1;align=left;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="1375" y="1270" width="260" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
