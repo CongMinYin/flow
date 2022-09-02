@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-09-02T04:46:02.339Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.102 Safari/537.36 Edg/104.0.1293.70" etag="jfFUYL0mBkny7kS8iZHm" version="20.0.4" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2022-09-02T07:19:03.537Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.102 Safari/537.36 Edg/104.0.1293.70" etag="vqRXd7cyOPmsOHUeJrz4" version="20.0.4" type="github" pages="4">
   <diagram id="BU2FqGcvlGGiVEi2HxtR" name="FIO call rbd">
     <mxGraphModel dx="2062" dy="1121" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -2872,7 +2872,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="xGhGwjkrp60PI3IrgOzS" name="containerd">
-    <mxGraphModel dx="1718" dy="934" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2545" dy="935" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -2895,6 +2895,9 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="VnnF2bQGoL9Erzhlx2XS-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;labelBackgroundColor=default;fontColor=#000000;" parent="1" source="VnnF2bQGoL9Erzhlx2XS-3" target="VnnF2bQGoL9Erzhlx2XS-23" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="445ApZD_RgdgtJku94gu-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;labelBackgroundColor=default;fontColor=#000000;" edge="1" parent="1" source="VnnF2bQGoL9Erzhlx2XS-3" target="445ApZD_RgdgtJku94gu-1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="VnnF2bQGoL9Erzhlx2XS-3" value="&lt;div style=&quot;font-family: &amp;quot;Droid Sans Mono&amp;quot;, monospace, monospace, &amp;quot;Droid Sans Fallback&amp;quot;; font-size: 14px; line-height: 19px;&quot;&gt;&lt;span style=&quot;&quot;&gt;func&lt;/span&gt; (c *Client) &lt;span style=&quot;&quot;&gt;fetch&lt;/span&gt;(ctx context.Context, rCtx *RemoteContext, ref &lt;span style=&quot;&quot;&gt;string&lt;/span&gt;, limit &lt;span style=&quot;&quot;&gt;int&lt;/span&gt;) (images.Image, &lt;span style=&quot;&quot;&gt;error&lt;/span&gt;) {&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontColor=#000000;" parent="1" vertex="1">
@@ -2952,6 +2955,15 @@
         </mxCell>
         <mxCell id="VnnF2bQGoL9Erzhlx2XS-23" value="&lt;div style=&quot;font-family: &amp;quot;Droid Sans Mono&amp;quot;, monospace, monospace, &amp;quot;Droid Sans Fallback&amp;quot;; font-size: 14px; line-height: 19px;&quot;&gt;&lt;span style=&quot;&quot;&gt;err&lt;/span&gt; := images.&lt;span style=&quot;&quot;&gt;Dispatch&lt;/span&gt;(ctx, handler, limiter, desc);&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="1170" y="900" width="470" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="445ApZD_RgdgtJku94gu-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;labelBackgroundColor=default;fontColor=#000000;" edge="1" parent="1" source="445ApZD_RgdgtJku94gu-1" target="445ApZD_RgdgtJku94gu-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="445ApZD_RgdgtJku94gu-1" value="&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;font face=&quot;Droid Sans Mono, monospace, monospace, Droid Sans Fallback&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;name, desc, err := rCtx.Resolver.Resolve(ctx, ref)&lt;/span&gt;&lt;/font&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="-340" y="900" width="456" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="445ApZD_RgdgtJku94gu-2" value="&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;/div&gt;&lt;font face=&quot;Droid Sans Mono, monospace, monospace, Droid Sans Fallback&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;获取name,如：docker.io/library/nginx:latest；&lt;br&gt;desc是描述&lt;br&gt;&lt;/span&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="-287" y="1020" width="350" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
