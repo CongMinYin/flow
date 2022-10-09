@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-10-08T12:49:51.725Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="rSGc4zBBiA7WuzZditlQ" version="20.3.7" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2022-10-09T09:38:14.418Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="jCk1dm_a-Yubd0brjDeH" version="20.3.7" type="github" pages="4">
   <diagram id="xGhGwjkrp60PI3IrgOzS" name="containerd">
     <mxGraphModel dx="-177" dy="606" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -239,16 +239,17 @@
         <mxCell id="eIX5NhHmsv5h01Mz1Ngm-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="eIX5NhHmsv5h01Mz1Ngm-18" target="eIX5NhHmsv5h01Mz1Ngm-20">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="eIX5NhHmsv5h01Mz1Ngm-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="eIX5NhHmsv5h01Mz1Ngm-18" target="eIX5NhHmsv5h01Mz1Ngm-51">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eIX5NhHmsv5h01Mz1Ngm-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="eIX5NhHmsv5h01Mz1Ngm-18" target="eIX5NhHmsv5h01Mz1Ngm-52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="eIX5NhHmsv5h01Mz1Ngm-18" value="&lt;div style=&quot;line-height: 19px;&quot;&gt;err := fetch(ctx, ingester, fetcher, desc)&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontColor=#000000;fontFamily=Times New Roman;fontSize=20;" vertex="1" parent="1">
           <mxGeometry x="2766.5" y="1840" width="410" height="60" as="geometry" />
         </mxCell>
         <mxCell id="eIX5NhHmsv5h01Mz1Ngm-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="eIX5NhHmsv5h01Mz1Ngm-20" target="eIX5NhHmsv5h01Mz1Ngm-24">
           <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="eIX5NhHmsv5h01Mz1Ngm-28" value="下面的都存疑" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="eIX5NhHmsv5h01Mz1Ngm-23">
-          <mxGeometry x="-0.2899" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
         </mxCell>
         <mxCell id="eIX5NhHmsv5h01Mz1Ngm-20" value="&lt;div style=&quot;line-height: 19px;&quot;&gt;cw, err := content.OpenWriter(ctx, ingester, content.WithRef(MakeRefKey(ctx, desc)), content.WithDescriptor(desc))&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontColor=#000000;fontFamily=Times New Roman;fontSize=20;" vertex="1" parent="1">
           <mxGeometry x="2766.5" y="1940" width="410" height="60" as="geometry" />
@@ -265,7 +266,7 @@
         <mxCell id="eIX5NhHmsv5h01Mz1Ngm-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="eIX5NhHmsv5h01Mz1Ngm-25" target="eIX5NhHmsv5h01Mz1Ngm-30">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="eIX5NhHmsv5h01Mz1Ngm-25" value="&lt;div style=&quot;line-height: 19px;&quot;&gt;func (s *store) Writer(ctx context.Context, opts ...content.WriterOpt) (content.Writer, error) {&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontColor=#000000;fontFamily=Times New Roman;fontSize=20;" vertex="1" parent="1">
+        <mxCell id="eIX5NhHmsv5h01Mz1Ngm-25" value="&lt;div style=&quot;line-height: 19px;&quot;&gt;func (pcs *proxyContentStore) Writer(ctx context.Context, opts ...content.WriterOpt) (content.Writer, error) {&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontColor=#000000;fontFamily=Times New Roman;fontSize=20;" vertex="1" parent="1">
           <mxGeometry x="2766.5" y="2160" width="410" height="60" as="geometry" />
         </mxCell>
         <mxCell id="eIX5NhHmsv5h01Mz1Ngm-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="eIX5NhHmsv5h01Mz1Ngm-29" target="eIX5NhHmsv5h01Mz1Ngm-32">
@@ -277,7 +278,7 @@
         <mxCell id="eIX5NhHmsv5h01Mz1Ngm-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="eIX5NhHmsv5h01Mz1Ngm-30" target="eIX5NhHmsv5h01Mz1Ngm-29">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="eIX5NhHmsv5h01Mz1Ngm-30" value="&lt;div style=&quot;line-height: 19px;&quot;&gt;w, err := s.writer(ctx, wOpts.Ref, wOpts.Desc.Size, wOpts.Desc.Digest)&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontColor=#000000;fontFamily=Times New Roman;fontSize=20;" vertex="1" parent="1">
+        <mxCell id="eIX5NhHmsv5h01Mz1Ngm-30" value="&lt;div style=&quot;line-height: 19px;&quot;&gt;wrclient, offset, err := pcs.negotiate(ctx, wOpts.Ref, wOpts.Desc.Size, wOpts.Desc.Digest)&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontColor=#000000;fontFamily=Times New Roman;fontSize=20;" vertex="1" parent="1">
           <mxGeometry x="2766.5" y="2270" width="410" height="60" as="geometry" />
         </mxCell>
         <mxCell id="eIX5NhHmsv5h01Mz1Ngm-32" value="&lt;div style=&quot;line-height: 19px;&quot;&gt;w, err := s.writer(ctx, wOpts.Ref, wOpts.Desc.Size, wOpts.Desc.Digest)&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontColor=#000000;fontFamily=Times New Roman;fontSize=20;" vertex="1" parent="1">
