@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-10-11T03:35:44.218Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="TxsR_3agKvLJf3eRwC4F" version="20.3.7" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2022-10-11T03:47:43.103Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="hM9UBMO26WrLfYNuFrpC" version="20.3.7" type="github" pages="4">
   <diagram id="xGhGwjkrp60PI3IrgOzS" name="containerd">
-    <mxGraphModel dx="152" dy="759" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="-390" dy="531" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -159,6 +159,9 @@
         <mxCell id="eIX5NhHmsv5h01Mz1Ngm-3" value="&lt;div style=&quot;line-height: 19px;&quot;&gt;func (c *Client) fetch(ctx context.Context, rCtx *RemoteContext, ref string, limit int) (images.Image, error) {&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontColor=#000000;fontFamily=Times New Roman;fontSize=20;" vertex="1" parent="1">
           <mxGeometry x="1791" y="1370" width="345" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="KfB5HZ5zgNnGsCt1Fe2i-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=18;" edge="1" parent="1" source="eIX5NhHmsv5h01Mz1Ngm-4" target="KfB5HZ5zgNnGsCt1Fe2i-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="eIX5NhHmsv5h01Mz1Ngm-4" value="&lt;div style=&quot;font-size: 20px; line-height: 19px;&quot;&gt;containerd.(*Client).createNewImage&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 20px; line-height: 19px;&quot;&gt;pull.go:259&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontColor=#000000;fontFamily=Times New Roman;fontSize=20;" vertex="1" parent="1">
           <mxGeometry x="2196" y="1370" width="325" height="60" as="geometry" />
         </mxCell>
@@ -267,6 +270,9 @@
         </mxCell>
         <mxCell id="eIX5NhHmsv5h01Mz1Ngm-70" value="&lt;div style=&quot;line-height: 19px;&quot;&gt;func (a *dockerAuthorizer) AddResponses(ctx context.Context, responses []*http.Response) error {&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontColor=#000000;fontFamily=Times New Roman;fontSize=20;" vertex="1" parent="1">
           <mxGeometry x="3670" y="2830" width="410" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="KfB5HZ5zgNnGsCt1Fe2i-1" value="&lt;div style=&quot;line-height: 19px;&quot;&gt;func (s *remoteImages) Create(ctx context.Context, image images.Image) (images.Image, error) {&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontColor=#000000;fontFamily=Times New Roman;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="2612.5" y="1370" width="325" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
@@ -3228,7 +3234,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="BiGC5ZwQ5-_0eEG2Jqlq" name="IO Layer-Image-Object">
-    <mxGraphModel dx="2062" dy="1121" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1264" dy="531" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
