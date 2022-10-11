@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-10-11T03:14:34.131Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="Oo2sUhq78r69_3b4OSpW" version="20.3.7" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2022-10-11T03:21:54.826Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="G8Dbv3UrhLoQMT3ZbncM" version="20.3.7" type="github" pages="4">
   <diagram id="xGhGwjkrp60PI3IrgOzS" name="containerd">
-    <mxGraphModel dx="-177" dy="598" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="-323" dy="559" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -284,7 +284,7 @@
         <mxCell id="eIX5NhHmsv5h01Mz1Ngm-74" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="eIX5NhHmsv5h01Mz1Ngm-32" target="eIX5NhHmsv5h01Mz1Ngm-73">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="eIX5NhHmsv5h01Mz1Ngm-75" value="猜测会调用到grpc的write" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="eIX5NhHmsv5h01Mz1Ngm-74">
+        <mxCell id="eIX5NhHmsv5h01Mz1Ngm-75" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;猜测会调用到grpc的某个函数&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="eIX5NhHmsv5h01Mz1Ngm-74">
           <mxGeometry x="-0.2833" y="-3" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
@@ -378,8 +378,8 @@
         <mxCell id="eIX5NhHmsv5h01Mz1Ngm-70" value="&lt;div style=&quot;line-height: 19px;&quot;&gt;func (a *dockerAuthorizer) AddResponses(ctx context.Context, responses []*http.Response) error {&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontColor=#000000;fontFamily=Times New Roman;fontSize=20;" vertex="1" parent="1">
           <mxGeometry x="3670" y="2830" width="410" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="eIX5NhHmsv5h01Mz1Ngm-73" value="&lt;div style=&quot;line-height: 19px;&quot;&gt;func (pcs *proxyContentStore) Writer(ctx context.Context, opts ...content.WriterOpt) (content.Writer, error) {&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontColor=#000000;fontFamily=Times New Roman;fontSize=20;" vertex="1" parent="1">
-          <mxGeometry x="2766.5" y="2630" width="410" height="60" as="geometry" />
+        <mxCell id="eIX5NhHmsv5h01Mz1Ngm-73" value="&lt;div style=&quot;line-height: 19px;&quot;&gt;不知道不是调用write这个grpc，会有数据写入到&lt;/div&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;ls io.containerd.content.v1.content/ingest/ -lh&lt;/div&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;func (pcs *proxyContentStore) Writer(ctx context.Context, opts ...content.WriterOpt) (content.Writer, error) {&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontColor=#000000;fontFamily=Times New Roman;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="2754.75" y="2620" width="433.5" height="150" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
