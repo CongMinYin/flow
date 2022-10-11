@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-10-11T03:33:55.074Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="4rAXWdd7dEsAFydizXJm" version="20.3.7" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2022-10-11T03:35:44.218Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="TxsR_3agKvLJf3eRwC4F" version="20.3.7" type="github" pages="4">
   <diagram id="xGhGwjkrp60PI3IrgOzS" name="containerd">
-    <mxGraphModel dx="-390" dy="531" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="152" dy="759" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -262,7 +262,7 @@
         <mxCell id="eIX5NhHmsv5h01Mz1Ngm-66" value="&lt;div style=&quot;line-height: 19px;&quot;&gt;if err := r.host.Authorizer.AddResponses(ctx, responses); err == nil {&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontColor=#000000;fontFamily=Times New Roman;fontSize=20;" vertex="1" parent="1">
           <mxGeometry x="3670" y="2710" width="410" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="eIX5NhHmsv5h01Mz1Ngm-69" value="&lt;div style=&quot;line-height: 19px;&quot;&gt;看起来像是这句话获取了responses，但是这里是已经有了responses，不知道这个流程里哪句话发送了grpc请求去请求下载image，从gdb看，是在r.open这个函数里面&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontColor=#000000;fontFamily=Times New Roman;fontSize=20;" vertex="1" parent="1">
+        <mxCell id="eIX5NhHmsv5h01Mz1Ngm-69" value="&lt;div style=&quot;line-height: 19px;&quot;&gt;看起来像是这句话获取了responses，但是这里是已经有了responses，可能是openWrite下载数据到ingest中，最后谁去移动数据到blobs中&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontColor=#000000;fontFamily=Times New Roman;fontSize=20;" vertex="1" parent="1">
           <mxGeometry x="4110" y="2810" width="410" height="120" as="geometry" />
         </mxCell>
         <mxCell id="eIX5NhHmsv5h01Mz1Ngm-70" value="&lt;div style=&quot;line-height: 19px;&quot;&gt;func (a *dockerAuthorizer) AddResponses(ctx context.Context, responses []*http.Response) error {&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontColor=#000000;fontFamily=Times New Roman;fontSize=20;" vertex="1" parent="1">
