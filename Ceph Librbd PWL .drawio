@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-10-11T03:27:54.891Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="RZsPSrCzUTmNs4RBivRZ" version="20.3.7" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2022-10-11T03:33:55.074Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="4rAXWdd7dEsAFydizXJm" version="20.3.7" type="github" pages="4">
   <diagram id="xGhGwjkrp60PI3IrgOzS" name="containerd">
-    <mxGraphModel dx="2559" dy="1770" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="-390" dy="531" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -189,29 +189,25 @@
         <mxCell id="eIX5NhHmsv5h01Mz1Ngm-24" value="&lt;div style=&quot;line-height: 19px;&quot;&gt;cw, err = cs.Writer(ctx, opts...)&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontColor=#000000;fontFamily=Times New Roman;fontSize=20;" vertex="1" parent="1">
           <mxGeometry x="2766.5" y="2050" width="410" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="eIX5NhHmsv5h01Mz1Ngm-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="eIX5NhHmsv5h01Mz1Ngm-25" target="eIX5NhHmsv5h01Mz1Ngm-30">
+        <mxCell id="eIX5NhHmsv5h01Mz1Ngm-76" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=18;" edge="1" parent="1" source="eIX5NhHmsv5h01Mz1Ngm-25" target="eIX5NhHmsv5h01Mz1Ngm-29">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2972" y="2340" />
+              <mxPoint x="3225" y="2340" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eIX5NhHmsv5h01Mz1Ngm-77" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=18;" edge="1" parent="1" source="eIX5NhHmsv5h01Mz1Ngm-25" target="eIX5NhHmsv5h01Mz1Ngm-30">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="eIX5NhHmsv5h01Mz1Ngm-25" value="&lt;div style=&quot;line-height: 19px;&quot;&gt;func (pcs *proxyContentStore) Writer(ctx context.Context, opts ...content.WriterOpt) (content.Writer, error) {&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontColor=#000000;fontFamily=Times New Roman;fontSize=20;" vertex="1" parent="1">
-          <mxGeometry x="2766.5" y="2160" width="410" height="60" as="geometry" />
+        <mxCell id="eIX5NhHmsv5h01Mz1Ngm-25" value="&lt;div style=&quot;line-height: 19px;&quot;&gt;gdb调用write这个grpc，会有数据写入到&lt;/div&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;ls io.containerd.content.v1.content/ingest/ -lh&lt;/div&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;func (pcs *proxyContentStore) Writer(ctx context.Context, opts ...content.WriterOpt) (content.Writer, error) {&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontColor=#000000;fontFamily=Times New Roman;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="2766.5" y="2170" width="410" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="eIX5NhHmsv5h01Mz1Ngm-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="eIX5NhHmsv5h01Mz1Ngm-29" target="eIX5NhHmsv5h01Mz1Ngm-32">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="eIX5NhHmsv5h01Mz1Ngm-29" value="&lt;div style=&quot;line-height: 19px;&quot;&gt;if err := wrclient.Send(&amp;amp;contentapi.WriteContentRequest{&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontColor=#000000;fontFamily=Times New Roman;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="3020" y="2380" width="480" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="eIX5NhHmsv5h01Mz1Ngm-29" value="&lt;div style=&quot;line-height: 19px;&quot;&gt;func (s *store) writer(ctx context.Context, ref string, total int64, expected digest.Digest) (content.Writer, error) {&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontColor=#000000;fontFamily=Times New Roman;fontSize=20;" vertex="1" parent="1">
-          <mxGeometry x="2766.5" y="2380" width="410" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="eIX5NhHmsv5h01Mz1Ngm-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="eIX5NhHmsv5h01Mz1Ngm-30" target="eIX5NhHmsv5h01Mz1Ngm-29">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="eIX5NhHmsv5h01Mz1Ngm-30" value="&lt;div style=&quot;line-height: 19px;&quot;&gt;wrclient, offset, err := pcs.negotiate(ctx, wOpts.Ref, wOpts.Desc.Size, wOpts.Desc.Digest)&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontColor=#000000;fontFamily=Times New Roman;fontSize=20;" vertex="1" parent="1">
-          <mxGeometry x="2766.5" y="2270" width="410" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="eIX5NhHmsv5h01Mz1Ngm-74" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="eIX5NhHmsv5h01Mz1Ngm-32" target="eIX5NhHmsv5h01Mz1Ngm-73">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="eIX5NhHmsv5h01Mz1Ngm-32" value="&lt;div style=&quot;line-height: 19px;&quot;&gt;w, err := s.writer(ctx, wOpts.Ref, wOpts.Desc.Size, wOpts.Desc.Digest)&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontColor=#000000;fontFamily=Times New Roman;fontSize=20;" vertex="1" parent="1">
-          <mxGeometry x="2766.5" y="2490" width="410" height="60" as="geometry" />
+        <mxCell id="eIX5NhHmsv5h01Mz1Ngm-30" value="&lt;div style=&quot;line-height: 19px;&quot;&gt;wrclient, err := pcs.client.Write(ctx)&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontColor=#000000;fontFamily=Times New Roman;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="2570" y="2380" width="410" height="60" as="geometry" />
         </mxCell>
         <mxCell id="eIX5NhHmsv5h01Mz1Ngm-45" value="&lt;div style=&quot;line-height: 19px; font-size: 20px;&quot;&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;name, desc, err := rCtx.Resolver.Resolve(ctx, ref)&lt;/span&gt;&lt;/font&gt;&lt;br style=&quot;font-size: 20px;&quot;&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontColor=#000000;fontFamily=Times New Roman;fontSize=20;" vertex="1" parent="1">
           <mxGeometry x="2895" y="1000" width="456" height="60" as="geometry" />
@@ -271,9 +267,6 @@
         </mxCell>
         <mxCell id="eIX5NhHmsv5h01Mz1Ngm-70" value="&lt;div style=&quot;line-height: 19px;&quot;&gt;func (a *dockerAuthorizer) AddResponses(ctx context.Context, responses []*http.Response) error {&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontColor=#000000;fontFamily=Times New Roman;fontSize=20;" vertex="1" parent="1">
           <mxGeometry x="3670" y="2830" width="410" height="70" as="geometry" />
-        </mxCell>
-        <mxCell id="eIX5NhHmsv5h01Mz1Ngm-73" value="&lt;div style=&quot;line-height: 19px;&quot;&gt;gdb调用write这个grpc，会有数据写入到&lt;/div&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;ls io.containerd.content.v1.content/ingest/ -lh&lt;/div&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;func (pcs *proxyContentStore) Writer(ctx context.Context, opts ...content.WriterOpt) (content.Writer, error) {&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontColor=#000000;fontFamily=Times New Roman;fontSize=20;" vertex="1" parent="1">
-          <mxGeometry x="2754.75" y="2620" width="433.5" height="150" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
