@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-10-09T11:41:46.918Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="jerdPjK0LJjk2ticfRH5" version="20.3.7" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2022-10-11T02:50:41.966Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="ynSjviDA6dT_o3mq8Lx0" version="20.3.7" type="github" pages="4">
   <diagram id="xGhGwjkrp60PI3IrgOzS" name="containerd">
-    <mxGraphModel dx="-177" dy="606" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="479" dy="864" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -323,8 +323,52 @@
         <mxCell id="eIX5NhHmsv5h01Mz1Ngm-52" value="&lt;div style=&quot;line-height: 19px;&quot;&gt;rc, err := fetcher.Fetch(ctx, desc)&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontColor=#000000;fontFamily=Times New Roman;fontSize=20;" vertex="1" parent="1">
           <mxGeometry x="3670" y="1940" width="410" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="eIX5NhHmsv5h01Mz1Ngm-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="eIX5NhHmsv5h01Mz1Ngm-55" target="eIX5NhHmsv5h01Mz1Ngm-57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="eIX5NhHmsv5h01Mz1Ngm-55" value="&lt;div style=&quot;line-height: 19px;&quot;&gt;func (r dockerFetcher) Fetch(ctx context.Context, desc ocispec.Descriptor) (io.ReadCloser, error) {&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontColor=#000000;fontFamily=Times New Roman;fontSize=20;" vertex="1" parent="1">
           <mxGeometry x="3670" y="2050" width="410" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="eIX5NhHmsv5h01Mz1Ngm-62" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="eIX5NhHmsv5h01Mz1Ngm-57" target="eIX5NhHmsv5h01Mz1Ngm-59">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eIX5NhHmsv5h01Mz1Ngm-57" value="&lt;div style=&quot;line-height: 19px;&quot;&gt;func (r dockerFetcher) open(ctx context.Context, req *request, mediatype string, offset int64) (_ io.ReadCloser, retErr error) {&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontColor=#000000;fontFamily=Times New Roman;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="3670" y="2160" width="410" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="eIX5NhHmsv5h01Mz1Ngm-63" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="eIX5NhHmsv5h01Mz1Ngm-59" target="eIX5NhHmsv5h01Mz1Ngm-61">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eIX5NhHmsv5h01Mz1Ngm-59" value="&lt;div style=&quot;line-height: 19px;&quot;&gt;rc, err := r.open(ctx, req, desc.MediaType, offset)&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;130行最后一个blobs endpoint&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontColor=#000000;fontFamily=Times New Roman;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="3670" y="2290" width="410" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="eIX5NhHmsv5h01Mz1Ngm-65" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="eIX5NhHmsv5h01Mz1Ngm-61" target="eIX5NhHmsv5h01Mz1Ngm-64">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eIX5NhHmsv5h01Mz1Ngm-61" value="&lt;div style=&quot;line-height: 19px;&quot;&gt;resp, err := req.doWithRetries(ctx, nil)&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;递归调用&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontColor=#000000;fontFamily=Times New Roman;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="3670" y="2430" width="410" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="eIX5NhHmsv5h01Mz1Ngm-67" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="eIX5NhHmsv5h01Mz1Ngm-64" target="eIX5NhHmsv5h01Mz1Ngm-66">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eIX5NhHmsv5h01Mz1Ngm-68" value="不确定" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="eIX5NhHmsv5h01Mz1Ngm-67">
+          <mxGeometry x="-0.1988" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eIX5NhHmsv5h01Mz1Ngm-64" value="&lt;div style=&quot;line-height: 19px;&quot;&gt;每次会检查response的status code&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontColor=#000000;fontFamily=Times New Roman;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="3670" y="2570" width="410" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="eIX5NhHmsv5h01Mz1Ngm-72" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="eIX5NhHmsv5h01Mz1Ngm-66" target="eIX5NhHmsv5h01Mz1Ngm-70">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eIX5NhHmsv5h01Mz1Ngm-66" value="&lt;div style=&quot;line-height: 19px;&quot;&gt;if err := r.host.Authorizer.AddResponses(ctx, responses); err == nil {&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontColor=#000000;fontFamily=Times New Roman;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="3670" y="2710" width="410" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="eIX5NhHmsv5h01Mz1Ngm-69" value="&lt;div style=&quot;line-height: 19px;&quot;&gt;看起来像是这句话获取了responses，但是这里是已经有了responses，不知道这个流程里哪句话发送了grpc请求去请求下载image，从gdb看，是在r.open这个函数里面&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontColor=#000000;fontFamily=Times New Roman;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="4110" y="2810" width="410" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="eIX5NhHmsv5h01Mz1Ngm-70" value="&lt;div style=&quot;line-height: 19px;&quot;&gt;func (a *dockerAuthorizer) AddResponses(ctx context.Context, responses []*http.Response) error {&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontColor=#000000;fontFamily=Times New Roman;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="3670" y="2830" width="410" height="70" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
