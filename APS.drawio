@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 QuarkPC/6.1.0.653" version="29.2.9">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="物料采购计划">
-    <mxGraphModel dx="926" dy="1537" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1330" dy="1644" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -232,6 +232,9 @@
         </mxCell>
         <mxCell id="yBz8ANuSGxdVm4CMevf2-7" parent="WIyWlLk6GJQsqaUBKTNV-1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" value="修改合单关系表" vertex="1">
           <mxGeometry height="40" width="120" x="780" y="-180" as="geometry" />
+        </mxCell>
+        <mxCell id="yBz8ANuSGxdVm4CMevf2-12" parent="WIyWlLk6GJQsqaUBKTNV-1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;span style=&quot;font-size: 12px; font-weight: 400;&quot;&gt;这里不需要确认数量，直接人工确认就行了，可能要改交期。标准采购交期？&lt;/span&gt;&lt;/h1&gt;&lt;div&gt;查询标准交期或人工修改&lt;/div&gt;" vertex="1">
+          <mxGeometry height="165" width="150" x="230" y="175" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
