@@ -361,13 +361,8 @@
         <mxCell id="vR9FadZ2t2_Jza5KVMv9-22" parent="WIyWlLk6GJQsqaUBKTNV-1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" value="已完成" vertex="1">
           <mxGeometry height="40" width="120" x="1544" y="-750" as="geometry" />
         </mxCell>
-        <mxCell id="vEXGE4JWsxT_ceJ9eHGK-10" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="vR9FadZ2t2_Jza5KVMv9-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="vR9FadZ2t2_Jza5KVMv9-36">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="1130" y="-530" />
-              <mxPoint x="1290" y="-530" />
-            </Array>
-          </mxGeometry>
+        <mxCell id="nUbIyhkfCkQBv8kzR3m6-10" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="vR9FadZ2t2_Jza5KVMv9-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="nUbIyhkfCkQBv8kzR3m6-8">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="vR9FadZ2t2_Jza5KVMv9-31" parent="WIyWlLk6GJQsqaUBKTNV-1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" value="取消" vertex="1">
           <mxGeometry height="40" width="120" x="1070" y="-670" as="geometry" />
@@ -375,26 +370,17 @@
         <mxCell id="vR9FadZ2t2_Jza5KVMv9-35" parent="WIyWlLk6GJQsqaUBKTNV-1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" value="取消失败" vertex="1">
           <mxGeometry height="40" width="120" x="1544" y="-670" as="geometry" />
         </mxCell>
-        <mxCell id="vR9FadZ2t2_Jza5KVMv9-46" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="vR9FadZ2t2_Jza5KVMv9-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="vR9FadZ2t2_Jza5KVMv9-37">
+        <mxCell id="nUbIyhkfCkQBv8kzR3m6-18" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="vR9FadZ2t2_Jza5KVMv9-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="nUbIyhkfCkQBv8kzR3m6-15">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="vR9FadZ2t2_Jza5KVMv9-36" parent="WIyWlLk6GJQsqaUBKTNV-1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" value="更新采购计划表记录状态为取消；&lt;div&gt;冲销表取消，已冲销数量回退&lt;/div&gt;" vertex="1">
-          <mxGeometry height="40" width="220" x="1180" y="-500" as="geometry" />
+        <mxCell id="vR9FadZ2t2_Jza5KVMv9-36" parent="WIyWlLk6GJQsqaUBKTNV-1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" value="更新采购计划记录占用状态为未占用，状态改为CANCELLED，占用数量回退" vertex="1">
+          <mxGeometry height="40" width="220" x="1494" y="-280" as="geometry" />
         </mxCell>
         <mxCell id="vR9FadZ2t2_Jza5KVMv9-37" parent="WIyWlLk6GJQsqaUBKTNV-1" style="ellipse;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;结束&lt;/span&gt;" vertex="1">
-          <mxGeometry height="80" width="120" x="1230" y="-410" as="geometry" />
-        </mxCell>
-        <mxCell id="vEXGE4JWsxT_ceJ9eHGK-13" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="vR9FadZ2t2_Jza5KVMv9-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="vR9FadZ2t2_Jza5KVMv9-37">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="1604" y="-440" />
-              <mxPoint x="1290" y="-440" />
-            </Array>
-            <mxPoint x="1604" y="-550" as="sourcePoint" />
-          </mxGeometry>
+          <mxGeometry height="80" width="120" x="1955" y="-200" as="geometry" />
         </mxCell>
         <mxCell id="vEXGE4JWsxT_ceJ9eHGK-3" parent="WIyWlLk6GJQsqaUBKTNV-1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-size: 12px; font-weight: normal;&quot;&gt;存在异步状态，实时性不高，定时器更新状态。需求计划查询到可以取消，采购计划去SAP查已经入库&lt;/span&gt;&lt;/h1&gt;" vertex="1">
-          <mxGeometry height="100" width="172.25" x="1610" y="-550" as="geometry" />
+          <mxGeometry height="100" width="172.25" x="1630" y="-590" as="geometry" />
         </mxCell>
         <mxCell id="vEXGE4JWsxT_ceJ9eHGK-6" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="vEXGE4JWsxT_ceJ9eHGK-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="vEXGE4JWsxT_ceJ9eHGK-5">
           <mxGeometry relative="1" as="geometry" />
@@ -402,16 +388,7 @@
         <mxCell id="vEXGE4JWsxT_ceJ9eHGK-4" parent="WIyWlLk6GJQsqaUBKTNV-1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" value="通知人工线下操作" vertex="1">
           <mxGeometry height="40" width="220" x="1255.5" y="-674" as="geometry" />
         </mxCell>
-        <mxCell id="vEXGE4JWsxT_ceJ9eHGK-11" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="vEXGE4JWsxT_ceJ9eHGK-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="1366" y="-530" />
-              <mxPoint x="1290" y="-530" />
-            </Array>
-            <mxPoint x="1290" y="-500" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="vEXGE4JWsxT_ceJ9eHGK-5" parent="WIyWlLk6GJQsqaUBKTNV-1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" value="线下操作成功&lt;div&gt;点击人工取消按钮&lt;/div&gt;" vertex="1">
+        <mxCell id="vEXGE4JWsxT_ceJ9eHGK-5" parent="WIyWlLk6GJQsqaUBKTNV-1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" value="暂时不做" vertex="1">
           <mxGeometry height="40" width="120" x="1305.5" y="-590" as="geometry" />
         </mxCell>
         <mxCell id="vEXGE4JWsxT_ceJ9eHGK-19" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="vEXGE4JWsxT_ceJ9eHGK-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="vEXGE4JWsxT_ceJ9eHGK-15">
@@ -574,6 +551,36 @@
         </mxCell>
         <mxCell id="nUbIyhkfCkQBv8kzR3m6-2" parent="WIyWlLk6GJQsqaUBKTNV-1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" value="&lt;article class=&quot;4ever-article&quot;&gt;内存生成冲销记录，&lt;/article&gt;&lt;article class=&quot;4ever-article&quot;&gt;初始冲销状态为生效&lt;/article&gt;" vertex="1">
           <mxGeometry height="70" width="458" x="371" y="-330" as="geometry" />
+        </mxCell>
+        <mxCell id="nUbIyhkfCkQBv8kzR3m6-6" parent="WIyWlLk6GJQsqaUBKTNV-1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" value="被冲销单(KC)" vertex="1">
+          <mxGeometry height="40" width="120" x="1230" y="-380" as="geometry" />
+        </mxCell>
+        <mxCell id="nUbIyhkfCkQBv8kzR3m6-14" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="nUbIyhkfCkQBv8kzR3m6-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="vR9FadZ2t2_Jza5KVMv9-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nUbIyhkfCkQBv8kzR3m6-7" parent="WIyWlLk6GJQsqaUBKTNV-1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" value="发起冲销的单子(DD)" vertex="1">
+          <mxGeometry height="40" width="120" x="1544" y="-380" as="geometry" />
+        </mxCell>
+        <mxCell id="nUbIyhkfCkQBv8kzR3m6-8" parent="WIyWlLk6GJQsqaUBKTNV-1" style="rhombus;whiteSpace=wrap;html=1;shadow=0;fontFamily=Helvetica;fontSize=12;align=center;strokeWidth=1;spacing=6;spacingTop=-4;" value="是否有冲销？" vertex="1">
+          <mxGeometry height="80" width="100" x="1080" y="-515" as="geometry" />
+        </mxCell>
+        <mxCell id="nUbIyhkfCkQBv8kzR3m6-12" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="nUbIyhkfCkQBv8kzR3m6-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="nUbIyhkfCkQBv8kzR3m6-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nUbIyhkfCkQBv8kzR3m6-13" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="nUbIyhkfCkQBv8kzR3m6-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="nUbIyhkfCkQBv8kzR3m6-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nUbIyhkfCkQBv8kzR3m6-9" parent="WIyWlLk6GJQsqaUBKTNV-1" style="rhombus;whiteSpace=wrap;html=1;shadow=0;fontFamily=Helvetica;fontSize=12;align=center;strokeWidth=1;spacing=6;spacingTop=-4;" value="被冲销单？" vertex="1">
+          <mxGeometry height="80" width="100" x="1240" y="-515" as="geometry" />
+        </mxCell>
+        <mxCell id="nUbIyhkfCkQBv8kzR3m6-11" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="nUbIyhkfCkQBv8kzR3m6-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.077;entryY=0.492;entryDx=0;entryDy=0;entryPerimeter=0;" target="nUbIyhkfCkQBv8kzR3m6-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nUbIyhkfCkQBv8kzR3m6-15" parent="WIyWlLk6GJQsqaUBKTNV-1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" value="&lt;div&gt;冲销记录状态改为取消&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="220" x="1494" y="-190" as="geometry" />
+        </mxCell>
+        <mxCell id="nUbIyhkfCkQBv8kzR3m6-17" parent="WIyWlLk6GJQsqaUBKTNV-1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-size: 12px; font-weight: normal;&quot;&gt;取消之后恢复的问题？&lt;/span&gt;&lt;/h1&gt;" vertex="1">
+          <mxGeometry height="100" width="172.25" x="1762.75" y="-310" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
