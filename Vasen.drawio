@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 QuarkPC/6.2.5.697" version="29.3.6" pages="2">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="物料采购计划">
-    <mxGraphModel dx="2479" dy="2070" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2893" dy="2282" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -254,13 +254,13 @@
         <mxCell id="vR9FadZ2t2_Jza5KVMv9-2" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="sAbL3xqU8Pib3Y4G0BvE-0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="sAbL3xqU8Pib3Y4G0BvE-1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="sAbL3xqU8Pib3Y4G0BvE-0" parent="WIyWlLk6GJQsqaUBKTNV-1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" value="&lt;article class=&quot;4ever-article&quot;&gt;&lt;span data-type=&quot;text&quot;&gt;SELECT ID，采购数量，已冲销数量 FROM 采购计划表&lt;/span&gt;&lt;/article&gt;&lt;article class=&quot;4ever-article&quot;&gt;&lt;span data-type=&quot;text&quot;&gt;WHERE 来源=库存补货 AND 物料编码=? AND 状态=制表||已申请||采购中&lt;/span&gt;&lt;/article&gt;&lt;article class=&quot;4ever-article&quot;&gt;&lt;span data-type=&quot;text&quot;&gt;ORDER BY 交期&lt;/span&gt;&lt;/article&gt;" vertex="1">
-          <mxGeometry height="50" width="396.75" x="401.63" y="-930" as="geometry" />
+        <mxCell id="sAbL3xqU8Pib3Y4G0BvE-0" parent="WIyWlLk6GJQsqaUBKTNV-1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" value="&lt;article class=&quot;4ever-article&quot;&gt;&lt;span data-type=&quot;text&quot;&gt;SELECT ID，采购数量，已冲销数量 FROM 采购计划表&lt;/span&gt;&lt;/article&gt;&lt;article class=&quot;4ever-article&quot;&gt;&lt;span data-type=&quot;text&quot;&gt;WHERE 来源=KC AND 物料编码=? AND 状态=制表||已申请||采购中&lt;/span&gt;&lt;/article&gt;&lt;article class=&quot;4ever-article&quot;&gt;&lt;span data-type=&quot;text&quot;&gt;ORDER BY 交期&lt;/span&gt;&lt;/article&gt;" vertex="1">
+          <mxGeometry height="50" width="428.37" x="385.83" y="-930" as="geometry" />
         </mxCell>
         <mxCell id="vR9FadZ2t2_Jza5KVMv9-3" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="sAbL3xqU8Pib3Y4G0BvE-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="sAbL3xqU8Pib3Y4G0BvE-4">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="sAbL3xqU8Pib3Y4G0BvE-1" parent="WIyWlLk6GJQsqaUBKTNV-1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" value="&lt;article class=&quot;4ever-article&quot;&gt;&lt;span data-type=&quot;text&quot;&gt;遍历：if 当前采购计划需求数量 &amp;lt;&amp;nbsp;&lt;/span&gt;&lt;span data-type=&quot;text&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;倒序∑（计划数量 - &lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;已冲销数量-已入库数量）？ 能冲销;&lt;/span&gt;&lt;/article&gt;&lt;article class=&quot;4ever-article&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;else 不能冲销&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;;&lt;/span&gt;&lt;/article&gt;" vertex="1">
+        <mxCell id="sAbL3xqU8Pib3Y4G0BvE-1" parent="WIyWlLk6GJQsqaUBKTNV-1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" value="&lt;article class=&quot;4ever-article&quot;&gt;&lt;span data-type=&quot;text&quot;&gt;遍历：if 当前采购计划需求数量 &amp;lt; 任一KC单&lt;/span&gt;&lt;span data-type=&quot;text&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;（计划数量 - &lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;已冲销数量-已入库数量）？ 能冲销;&lt;/span&gt;&lt;/article&gt;&lt;article class=&quot;4ever-article&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;else 不能冲销&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;;&lt;/span&gt;&lt;/article&gt;" vertex="1">
           <mxGeometry height="50" width="440" x="380" y="-830" as="geometry" />
         </mxCell>
         <mxCell id="vR9FadZ2t2_Jza5KVMv9-7" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="sAbL3xqU8Pib3Y4G0BvE-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="vR9FadZ2t2_Jza5KVMv9-5">
@@ -285,7 +285,7 @@
             <mxPoint x="5" y="-10" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="sAbL3xqU8Pib3Y4G0BvE-4" parent="WIyWlLk6GJQsqaUBKTNV-1" style="rhombus;whiteSpace=wrap;html=1;shadow=0;fontFamily=Helvetica;fontSize=12;align=center;strokeWidth=1;spacing=6;spacingTop=-4;" value="是否冲销？" vertex="1">
+        <mxCell id="sAbL3xqU8Pib3Y4G0BvE-4" parent="WIyWlLk6GJQsqaUBKTNV-1" style="rhombus;whiteSpace=wrap;html=1;shadow=0;fontFamily=Helvetica;fontSize=12;align=center;strokeWidth=1;spacing=6;spacingTop=-4;" value="能否冲销？" vertex="1">
           <mxGeometry height="80" width="100" x="550" y="-720" as="geometry" />
         </mxCell>
         <mxCell id="nUbIyhkfCkQBv8kzR3m6-3" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="vR9FadZ2t2_Jza5KVMv9-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="nUbIyhkfCkQBv8kzR3m6-2">
