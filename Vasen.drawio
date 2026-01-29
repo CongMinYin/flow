@@ -755,7 +755,7 @@
         <mxCell id="sWgIVLa7zKq_0dIm4dHx-5" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="sWgIVLa7zKq_0dIm4dHx-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="nUbIyhkfCkQBv8kzR3m6-15">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="sWgIVLa7zKq_0dIm4dHx-3" parent="WIyWlLk6GJQsqaUBKTNV-1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" value="&lt;div&gt;回退规则: 冲销数量 - 入库 &amp;gt; 0? 差值 : 0；&lt;/div&gt;" vertex="1">
+        <mxCell id="sWgIVLa7zKq_0dIm4dHx-3" parent="WIyWlLk6GJQsqaUBKTNV-1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" value="只回退KC单冲销数量" vertex="1">
           <mxGeometry height="40" width="226" x="1491" y="-190" as="geometry" />
         </mxCell>
       </root>
