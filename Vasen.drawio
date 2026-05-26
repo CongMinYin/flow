@@ -899,7 +899,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="mzxNDEtKvStLs9DE5gSp" name="AI">
-    <mxGraphModel dx="978" dy="530" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1417" dy="768" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -907,16 +907,52 @@
           <mxGeometry height="120" width="180" x="30" y="30" as="geometry" />
         </mxCell>
         <mxCell id="mM6HN3qtinp0sg12OduO-2" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="开发" vertex="1">
-          <mxGeometry height="80" width="120" x="100" y="120" as="geometry" />
+          <mxGeometry height="80" width="120" x="340" y="30" as="geometry" />
         </mxCell>
         <mxCell id="mM6HN3qtinp0sg12OduO-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="输入检测报告信息" vertex="1">
-          <mxGeometry height="60" width="120" x="100" y="240" as="geometry" />
+          <mxGeometry height="60" width="120" x="340" y="150" as="geometry" />
         </mxCell>
-        <mxCell id="mM6HN3qtinp0sg12OduO-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
-          <mxGeometry height="60" width="140" x="90" y="340" as="geometry" />
+        <mxCell id="mM6HN3qtinp0sg12OduO-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="请选择工业园？" vertex="1">
+          <mxGeometry height="60" width="140" x="150" y="480" as="geometry" />
         </mxCell>
         <mxCell id="mM6HN3qtinp0sg12OduO-5" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="例如：&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); background-color: transparent; text-align: left;&quot;&gt;PPR球阀20&amp;nbsp;32&amp;nbsp;40&amp;nbsp;50的检测报告&lt;/span&gt;" vertex="1">
-          <mxGeometry height="30" width="140" x="240" y="255" as="geometry" />
+          <mxGeometry height="30" width="140" x="480" y="165" as="geometry" />
+        </mxCell>
+        <mxCell id="mM6HN3qtinp0sg12OduO-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="请选择产品大类？" vertex="1">
+          <mxGeometry height="60" width="140" x="510" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="mM6HN3qtinp0sg12OduO-7" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="后续加入型式报告的选项" vertex="1">
+          <mxGeometry height="30" width="140" x="490" y="265" as="geometry" />
+        </mxCell>
+        <mxCell id="mM6HN3qtinp0sg12OduO-15" edge="1" parent="1" source="mM6HN3qtinp0sg12OduO-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="mM6HN3qtinp0sg12OduO-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mM6HN3qtinp0sg12OduO-16" connectable="0" parent="mM6HN3qtinp0sg12OduO-15" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="无" vertex="1">
+          <mxGeometry relative="1" x="-0.4978" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mM6HN3qtinp0sg12OduO-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="提取信息，判断是否有工业园，盖章，产品大类等信息" vertex="1">
+          <mxGeometry height="60" width="160" x="320" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="mM6HN3qtinp0sg12OduO-11" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="mM6HN3qtinp0sg12OduO-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400.0000000000002" y="420" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mM6HN3qtinp0sg12OduO-12" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="mM6HN3qtinp0sg12OduO-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400.0000000000002" y="420" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mM6HN3qtinp0sg12OduO-13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="请选择是否盖章？" vertex="1">
+          <mxGeometry height="60" width="140" x="330" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="mM6HN3qtinp0sg12OduO-17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="浙江伟星&lt;div&gt;上海伟星&lt;/div&gt;&lt;div&gt;天津伟星&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="140" x="150" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="mM6HN3qtinp0sg12OduO-18" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="陕西和西安的别名问题&lt;div&gt;系统里是什么？&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="140" x="10" y="600" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
