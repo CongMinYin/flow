@@ -906,6 +906,18 @@
         <mxCell id="mM6HN3qtinp0sg12OduO-1" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;自助检测报告&lt;/h1&gt;&lt;p&gt;流程说明.&lt;/p&gt;" vertex="1">
           <mxGeometry height="120" width="180" x="30" y="30" as="geometry" />
         </mxCell>
+        <mxCell id="mM6HN3qtinp0sg12OduO-2" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="开发" vertex="1">
+          <mxGeometry height="80" width="120" x="100" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="mM6HN3qtinp0sg12OduO-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="输入检测报告信息" vertex="1">
+          <mxGeometry height="60" width="120" x="100" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="mM6HN3qtinp0sg12OduO-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="140" x="90" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="mM6HN3qtinp0sg12OduO-5" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="例如：&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); background-color: transparent; text-align: left;&quot;&gt;PPR球阀20&amp;nbsp;32&amp;nbsp;40&amp;nbsp;50的检测报告&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="140" x="240" y="255" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
