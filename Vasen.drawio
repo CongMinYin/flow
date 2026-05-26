@@ -966,8 +966,35 @@
         <mxCell id="mM6HN3qtinp0sg12OduO-19" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="盖章/不盖章" vertex="1">
           <mxGeometry height="60" width="140" x="330" y="580" as="geometry" />
         </mxCell>
-        <mxCell id="mM6HN3qtinp0sg12OduO-20" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="管材/管道" vertex="1">
+        <mxCell id="mM6HN3qtinp0sg12OduO-31" edge="1" parent="1" source="mM6HN3qtinp0sg12OduO-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="mM6HN3qtinp0sg12OduO-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mM6HN3qtinp0sg12OduO-32" edge="1" parent="1" source="mM6HN3qtinp0sg12OduO-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="mM6HN3qtinp0sg12OduO-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mM6HN3qtinp0sg12OduO-20" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="管材/管件" vertex="1">
           <mxGeometry height="60" width="140" x="510" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="mM6HN3qtinp0sg12OduO-24" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="管件" vertex="1">
+          <mxGeometry height="60" width="140" x="510" y="710" as="geometry" />
+        </mxCell>
+        <mxCell id="mM6HN3qtinp0sg12OduO-29" edge="1" parent="1" source="mM6HN3qtinp0sg12OduO-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="mM6HN3qtinp0sg12OduO-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mM6HN3qtinp0sg12OduO-25" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="管材" vertex="1">
+          <mxGeometry height="60" width="140" x="150" y="710" as="geometry" />
+        </mxCell>
+        <mxCell id="mM6HN3qtinp0sg12OduO-26" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="管材没有产品名称" vertex="1">
+          <mxGeometry height="30" width="140" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="mM6HN3qtinp0sg12OduO-30" edge="1" parent="1" source="mM6HN3qtinp0sg12OduO-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="mM6HN3qtinp0sg12OduO-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mM6HN3qtinp0sg12OduO-27" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="是否需要补充产品类别和规格信息" vertex="1">
+          <mxGeometry height="60" width="140" x="150" y="830" as="geometry" />
+        </mxCell>
+        <mxCell id="mM6HN3qtinp0sg12OduO-28" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="根据输入的管材类别和规格模糊匹配知识库" vertex="1">
+          <mxGeometry height="60" width="140" x="150" y="950" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
