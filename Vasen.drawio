@@ -899,7 +899,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="mzxNDEtKvStLs9DE5gSp" name="AI">
-    <mxGraphModel dx="4562" dy="2024" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3395" dy="1391" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1124,7 +1124,7 @@
         <mxCell id="pGQuH33HTBZYdBuO1Y-s-12" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="检测报告重要信息excel表结构" vertex="1">
           <mxGeometry height="200" width="200" x="-510" y="420" as="geometry" />
         </mxCell>
-        <mxCell id="pGQuH33HTBZYdBuO1Y-s-13" parent="pGQuH33HTBZYdBuO1Y-s-12" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;工业园&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;产品类别&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;产品名称&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;规格&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;型号&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;检测类型&lt;/font&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="pGQuH33HTBZYdBuO1Y-s-13" parent="pGQuH33HTBZYdBuO1Y-s-12" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;工业园&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;产品类别&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;产品名称&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;规格&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;型号&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;检测类型&lt;/font&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="150" width="160" x="10" y="30" as="geometry" />
         </mxCell>
         <mxCell id="pGQuH33HTBZYdBuO1Y-s-16" edge="1" parent="1" source="pGQuH33HTBZYdBuO1Y-s-10" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="pGQuH33HTBZYdBuO1Y-s-12" value="">
