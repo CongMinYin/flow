@@ -1206,7 +1206,7 @@
         <mxCell id="pGQuH33HTBZYdBuO1Y-s-166" edge="1" parent="1" source="pGQuH33HTBZYdBuO1Y-s-150" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="pGQuH33HTBZYdBuO1Y-s-163">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="pGQuH33HTBZYdBuO1Y-s-161" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="工作流" vertex="1">
+        <mxCell id="pGQuH33HTBZYdBuO1Y-s-161" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="工作流/节点" vertex="1">
           <mxGeometry height="60" width="160" x="414" y="290" as="geometry" />
         </mxCell>
         <mxCell id="pGQuH33HTBZYdBuO1Y-s-163" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="RPA" vertex="1">
