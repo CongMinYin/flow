@@ -899,7 +899,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="mzxNDEtKvStLs9DE5gSp" name="AI">
-    <mxGraphModel dx="3761" dy="1590" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2881" dy="1113" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1155,7 +1155,7 @@
           <mxGeometry height="80" width="60" x="-710" y="990" as="geometry" />
         </mxCell>
         <mxCell id="pGQuH33HTBZYdBuO1Y-s-143" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="术语库" vertex="1">
-          <mxGeometry height="200" width="200" x="-590" y="920" as="geometry" />
+          <mxGeometry height="200" width="200" x="-513" y="930" as="geometry" />
         </mxCell>
         <mxCell id="pGQuH33HTBZYdBuO1Y-s-144" parent="pGQuH33HTBZYdBuO1Y-s-143" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;西安=陕西&lt;/span&gt;" vertex="1">
           <mxGeometry height="150" width="160" x="10" y="30" as="geometry" />
