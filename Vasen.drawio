@@ -899,7 +899,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="mzxNDEtKvStLs9DE5gSp" name="AI">
-    <mxGraphModel dx="3395" dy="1391" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3761" dy="1590" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1118,6 +1118,9 @@
         <mxCell id="pGQuH33HTBZYdBuO1Y-s-9" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" value="数据" vertex="1">
           <mxGeometry height="80" width="60" x="-700" y="130" as="geometry" />
         </mxCell>
+        <mxCell id="pGQuH33HTBZYdBuO1Y-s-138" edge="1" parent="1" source="pGQuH33HTBZYdBuO1Y-s-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="pGQuH33HTBZYdBuO1Y-s-137">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="pGQuH33HTBZYdBuO1Y-s-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="手动添加表头" vertex="1">
           <mxGeometry height="60" width="160" x="-750" y="490" as="geometry" />
         </mxCell>
@@ -1135,6 +1138,27 @@
         </mxCell>
         <mxCell id="pGQuH33HTBZYdBuO1Y-s-136" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;自助检测报告&lt;/h1&gt;&lt;p&gt;流程说明：对话流模式Agent&lt;/p&gt;" vertex="1">
           <mxGeometry height="120" width="180" x="20" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="pGQuH33HTBZYdBuO1Y-s-140" edge="1" parent="1" source="pGQuH33HTBZYdBuO1Y-s-137" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="pGQuH33HTBZYdBuO1Y-s-139">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pGQuH33HTBZYdBuO1Y-s-137" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="整理数据：清理无效数据，编码替换成中文等" vertex="1">
+          <mxGeometry height="60" width="160" x="-750" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="pGQuH33HTBZYdBuO1Y-s-139" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="上传HiAgent知识库" vertex="1">
+          <mxGeometry height="60" width="160" x="-750" y="710" as="geometry" />
+        </mxCell>
+        <mxCell id="pGQuH33HTBZYdBuO1Y-s-141" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" value="知识库" vertex="1">
+          <mxGeometry height="80" width="60" x="-710" y="810" as="geometry" />
+        </mxCell>
+        <mxCell id="pGQuH33HTBZYdBuO1Y-s-142" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" value="术语库" vertex="1">
+          <mxGeometry height="80" width="60" x="-710" y="990" as="geometry" />
+        </mxCell>
+        <mxCell id="pGQuH33HTBZYdBuO1Y-s-143" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="术语库" vertex="1">
+          <mxGeometry height="200" width="200" x="-590" y="920" as="geometry" />
+        </mxCell>
+        <mxCell id="pGQuH33HTBZYdBuO1Y-s-144" parent="pGQuH33HTBZYdBuO1Y-s-143" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;西安=陕西&lt;/span&gt;" vertex="1">
+          <mxGeometry height="150" width="160" x="10" y="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
