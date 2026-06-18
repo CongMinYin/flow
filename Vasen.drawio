@@ -512,11 +512,15 @@
         <mxCell id="LWgNlzLof6IhD-hw90fP-33" edge="1" parent="1" source="LWgNlzLof6IhD-hw90fP-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="LWgNlzLof6IhD-hw90fP-29">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="LWgNlzLof6IhD-hw90fP-28" parent="1" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 21px;&quot;&gt;个人账号的普通任务&lt;/span&gt;" vertex="1">
+        <mxCell id="LWgNlzLof6IhD-hw90fP-28" parent="1" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 21px;&quot;&gt;个人账号的定时任务和手动执行任务&lt;/span&gt;" vertex="1">
           <mxGeometry height="80" width="200" x="200" y="-730" as="geometry" />
         </mxCell>
         <mxCell id="LWgNlzLof6IhD-hw90fP-35" edge="1" parent="1" source="LWgNlzLof6IhD-hw90fP-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=5;strokeColor=light-dark(#000000,#FF8000);entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="LWgNlzLof6IhD-hw90fP-34">
           <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="450" y="-560" />
+              <mxPoint x="450" y="-375" />
+            </Array>
             <mxPoint x="300" y="-520" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
