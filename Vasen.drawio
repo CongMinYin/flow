@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 QuarkPC/6.8.2.847" pages="2">
   <diagram id="mzxNDEtKvStLs9DE5gSp" name="AI">
-    <mxGraphModel dx="2539" dy="2097" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2989" dy="2341" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -436,8 +436,8 @@
         <mxCell id="LWgNlzLof6IhD-hw90fP-5" edge="1" parent="1" source="dfUBtiwr8X8sVf73yM51-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="LWgNlzLof6IhD-hw90fP-1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="dfUBtiwr8X8sVf73yM51-1" parent="1" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 21px;&quot;&gt;产业&lt;/font&gt;" vertex="1">
-          <mxGeometry height="80" width="120" x="-61" y="-1140" as="geometry" />
+        <mxCell id="dfUBtiwr8X8sVf73yM51-1" parent="1" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 21px;&quot;&gt;管理架构-产业&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="171" x="-82.25" y="-1140" as="geometry" />
         </mxCell>
         <mxCell id="LWgNlzLof6IhD-hw90fP-7" edge="1" parent="1" source="dfUBtiwr8X8sVf73yM51-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="LWgNlzLof6IhD-hw90fP-6">
           <mxGeometry relative="1" as="geometry" />
@@ -529,6 +529,33 @@
         </mxCell>
         <mxCell id="LWgNlzLof6IhD-hw90fP-34" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;" value="&lt;ol&gt;&lt;li&gt;&lt;font style=&quot;font-size: 21px;&quot;&gt;高级账号昂贵，数量有限，主要用来调度、协作开发等高级功能。&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font style=&quot;font-size: 21px;&quot;&gt;全面推广自动化仍需以来个人账号为主，能满足定时+手动的两种功能。&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font style=&quot;font-size: 21px;&quot;&gt;RPA全园区的生态：业务部门个人开发 + 数字化发展部技术支持。&lt;/font&gt;&lt;/li&gt;&lt;/ol&gt;" vertex="1">
           <mxGeometry height="110" width="786.5" x="-390" y="-430" as="geometry" />
+        </mxCell>
+        <mxCell id="LWgNlzLof6IhD-hw90fP-41" edge="1" parent="1" source="LWgNlzLof6IhD-hw90fP-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="LWgNlzLof6IhD-hw90fP-46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LWgNlzLof6IhD-hw90fP-42" edge="1" parent="1" source="LWgNlzLof6IhD-hw90fP-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="LWgNlzLof6IhD-hw90fP-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LWgNlzLof6IhD-hw90fP-43" edge="1" parent="1" source="LWgNlzLof6IhD-hw90fP-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="LWgNlzLof6IhD-hw90fP-48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LWgNlzLof6IhD-hw90fP-44" edge="1" parent="1" source="LWgNlzLof6IhD-hw90fP-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="LWgNlzLof6IhD-hw90fP-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LWgNlzLof6IhD-hw90fP-45" parent="1" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 21px;&quot;&gt;生态体系&lt;/span&gt;" vertex="1">
+          <mxGeometry height="80" width="171" x="1117.75" y="-1140" as="geometry" />
+        </mxCell>
+        <mxCell id="LWgNlzLof6IhD-hw90fP-46" parent="1" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 21px;&quot;&gt;个人开发&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="120" x="800" y="-1000" as="geometry" />
+        </mxCell>
+        <mxCell id="LWgNlzLof6IhD-hw90fP-47" parent="1" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 21px;&quot;&gt;合作开发&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="120" x="1020" y="-1000" as="geometry" />
+        </mxCell>
+        <mxCell id="LWgNlzLof6IhD-hw90fP-48" parent="1" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 21px;&quot;&gt;技术支持&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="120" x="1270" y="-1000" as="geometry" />
+        </mxCell>
+        <mxCell id="LWgNlzLof6IhD-hw90fP-49" parent="1" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 21px;&quot;&gt;培训指导&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="120" x="1480" y="-1000" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
