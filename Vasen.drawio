@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 QuarkPC/6.8.2.847" pages="2">
   <diagram id="mzxNDEtKvStLs9DE5gSp" name="AI">
-    <mxGraphModel dx="2001" dy="1805" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2539" dy="2097" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -469,26 +469,54 @@
         <mxCell id="LWgNlzLof6IhD-hw90fP-19" edge="1" parent="1" source="LWgNlzLof6IhD-hw90fP-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="LWgNlzLof6IhD-hw90fP-13">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="LWgNlzLof6IhD-hw90fP-20" edge="1" parent="1" source="LWgNlzLof6IhD-hw90fP-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="LWgNlzLof6IhD-hw90fP-16">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="LWgNlzLof6IhD-hw90fP-20" edge="1" parent="1" source="LWgNlzLof6IhD-hw90fP-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.54;entryY=0.008;entryDx=0;entryDy=0;entryPerimeter=0;" target="LWgNlzLof6IhD-hw90fP-25">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="95" y="-730" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="LWgNlzLof6IhD-hw90fP-21" edge="1" parent="1" source="LWgNlzLof6IhD-hw90fP-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="LWgNlzLof6IhD-hw90fP-17">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="LWgNlzLof6IhD-hw90fP-21" edge="1" parent="1" source="LWgNlzLof6IhD-hw90fP-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="LWgNlzLof6IhD-hw90fP-28">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="298.5" y="-730" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="LWgNlzLof6IhD-hw90fP-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="高级账号调度+控制台管理" vertex="1">
+        <mxCell id="LWgNlzLof6IhD-hw90fP-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 21px;&quot;&gt;高级账号调度+控制台管理&lt;/font&gt;" vertex="1">
           <mxGeometry height="60" width="800" x="-400" y="-880" as="geometry" />
+        </mxCell>
+        <mxCell id="LWgNlzLof6IhD-hw90fP-30" edge="1" parent="1" source="LWgNlzLof6IhD-hw90fP-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="LWgNlzLof6IhD-hw90fP-22">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="LWgNlzLof6IhD-hw90fP-12" parent="1" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 21px;&quot;&gt;服务器定时任务&lt;/span&gt;" vertex="1">
           <mxGeometry height="80" width="170" x="-393" y="-730" as="geometry" />
         </mxCell>
-        <mxCell id="LWgNlzLof6IhD-hw90fP-13" parent="1" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 21px;&quot;&gt;高级任务&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 21px;&quot;&gt;（控制台调度）&lt;/span&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="LWgNlzLof6IhD-hw90fP-31" edge="1" parent="1" source="LWgNlzLof6IhD-hw90fP-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="LWgNlzLof6IhD-hw90fP-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LWgNlzLof6IhD-hw90fP-13" parent="1" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 21px;&quot;&gt;高级任务计划&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 21px;&quot;&gt;（控制台调度）&lt;/span&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="80" width="185" x="-200" y="-730" as="geometry" />
         </mxCell>
-        <mxCell id="LWgNlzLof6IhD-hw90fP-16" parent="1" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" value="&#xa;&lt;span style=&quot;color: rgb(255, 255, 255); font-family: Helvetica; font-size: 21px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(27, 29, 30); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;&quot;&gt;API调度&lt;/span&gt;&#xa;&#xa;" vertex="1">
-          <mxGeometry height="80" width="170" x="10" y="-730" as="geometry" />
+        <mxCell id="LWgNlzLof6IhD-hw90fP-22" parent="1" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;以临海工业园为主，高级账号执行，统一管理，每天约23个任务。主要的运维工作，不推荐继续增加。&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="170" x="-393" y="-600" as="geometry" />
         </mxCell>
-        <mxCell id="LWgNlzLof6IhD-hw90fP-17" parent="1" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" value="&lt;br&gt;&lt;font color=&quot;#121212&quot;&gt;&lt;span style=&quot;font-size: 21px; background-color: rgb(211, 213, 214);&quot;&gt;普通账号的普通任务&lt;/span&gt;&lt;/font&gt;" vertex="1">
-          <mxGeometry height="80" width="197" x="200" y="-730" as="geometry" />
+        <mxCell id="LWgNlzLof6IhD-hw90fP-23" parent="1" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 21px;&quot;&gt;以重庆工业园为主，高级账号执行&lt;/span&gt;" vertex="1">
+          <mxGeometry height="80" width="185" x="-200" y="-600" as="geometry" />
+        </mxCell>
+        <mxCell id="LWgNlzLof6IhD-hw90fP-32" edge="1" parent="1" source="LWgNlzLof6IhD-hw90fP-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="LWgNlzLof6IhD-hw90fP-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LWgNlzLof6IhD-hw90fP-25" parent="1" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 21px;&quot;&gt;API调度&lt;/span&gt;" vertex="1">
+          <mxGeometry height="80" width="185" x="2.5" y="-730" as="geometry" />
+        </mxCell>
+        <mxCell id="LWgNlzLof6IhD-hw90fP-26" parent="1" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 21px;&quot;&gt;临海工业园为主，高级账号执行，较难，涉及编程&lt;/span&gt;" vertex="1">
+          <mxGeometry height="80" width="185" x="2.5" y="-600" as="geometry" />
+        </mxCell>
+        <mxCell id="LWgNlzLof6IhD-hw90fP-33" edge="1" parent="1" source="LWgNlzLof6IhD-hw90fP-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="LWgNlzLof6IhD-hw90fP-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LWgNlzLof6IhD-hw90fP-28" parent="1" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 21px;&quot;&gt;普通账号的普通任务&lt;/span&gt;" vertex="1">
+          <mxGeometry height="80" width="200" x="200" y="-730" as="geometry" />
+        </mxCell>
+        <mxCell id="LWgNlzLof6IhD-hw90fP-29" parent="1" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;fillColor=#fa6800;fontColor=#000000;strokeColor=#C73500;" value="&lt;span style=&quot;font-size: 21px;&quot;&gt;全面推广的主要方向&lt;/span&gt;" vertex="1">
+          <mxGeometry height="80" width="200" x="200" y="-600" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
