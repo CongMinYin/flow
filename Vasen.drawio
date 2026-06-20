@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 QuarkPC/6.8.2.847" pages="2">
   <diagram id="mzxNDEtKvStLs9DE5gSp" name="AI">
-    <mxGraphModel dx="2613" dy="2137" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2989" dy="2341" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -545,17 +545,67 @@
         <mxCell id="LWgNlzLof6IhD-hw90fP-45" parent="1" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 21px;&quot;&gt;RPA生态体系&lt;/span&gt;" vertex="1">
           <mxGeometry height="80" width="171" x="1117.75" y="-1140" as="geometry" />
         </mxCell>
+        <mxCell id="LWgNlzLof6IhD-hw90fP-58" edge="1" parent="1" source="LWgNlzLof6IhD-hw90fP-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="LWgNlzLof6IhD-hw90fP-52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="LWgNlzLof6IhD-hw90fP-46" parent="1" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 21px;&quot;&gt;个人开发&lt;/font&gt;" vertex="1">
-          <mxGeometry height="80" width="120" x="1480" y="-1000" as="geometry" />
+          <mxGeometry height="80" width="120" x="1590" y="-1000" as="geometry" />
+        </mxCell>
+        <mxCell id="LWgNlzLof6IhD-hw90fP-57" edge="1" parent="1" source="LWgNlzLof6IhD-hw90fP-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="LWgNlzLof6IhD-hw90fP-52">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="LWgNlzLof6IhD-hw90fP-47" parent="1" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 21px;&quot;&gt;合作开发&lt;/font&gt;" vertex="1">
-          <mxGeometry height="80" width="120" x="1288.75" y="-1000" as="geometry" />
+          <mxGeometry height="80" width="120" x="1310" y="-1000" as="geometry" />
+        </mxCell>
+        <mxCell id="LWgNlzLof6IhD-hw90fP-56" edge="1" parent="1" source="LWgNlzLof6IhD-hw90fP-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="LWgNlzLof6IhD-hw90fP-51">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="970" y="-810" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="LWgNlzLof6IhD-hw90fP-48" parent="1" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 21px;&quot;&gt;技术支持&lt;/font&gt;" vertex="1">
           <mxGeometry height="80" width="120" x="1040" y="-1000" as="geometry" />
         </mxCell>
+        <mxCell id="LWgNlzLof6IhD-hw90fP-55" edge="1" parent="1" source="LWgNlzLof6IhD-hw90fP-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="LWgNlzLof6IhD-hw90fP-51">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="LWgNlzLof6IhD-hw90fP-49" parent="1" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 21px;&quot;&gt;培训指导&lt;/font&gt;" vertex="1">
-          <mxGeometry height="80" width="120" x="827" y="-1000" as="geometry" />
+          <mxGeometry height="80" width="120" x="780" y="-1000" as="geometry" />
+        </mxCell>
+        <mxCell id="LWgNlzLof6IhD-hw90fP-51" parent="1" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 21px;&quot;&gt;以部门为单位进行培训、指导，集中答疑&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="390" x="780" y="-820" as="geometry" />
+        </mxCell>
+        <mxCell id="LWgNlzLof6IhD-hw90fP-59" edge="1" parent="1" source="LWgNlzLof6IhD-hw90fP-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="LWgNlzLof6IhD-hw90fP-53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LWgNlzLof6IhD-hw90fP-60" edge="1" parent="1" source="LWgNlzLof6IhD-hw90fP-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="LWgNlzLof6IhD-hw90fP-54">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LWgNlzLof6IhD-hw90fP-52" parent="1" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 21px;&quot;&gt;各部门自主开发，辅以技术支持&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 21px;&quot;&gt;较复杂的任务，可由数字化发展部开发部门难点自动化流程&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="580" x="1260" y="-820" as="geometry" />
+        </mxCell>
+        <mxCell id="LWgNlzLof6IhD-hw90fP-53" parent="1" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 21px;&quot;&gt;服务器调度任务，由数字化发展部管理&lt;/span&gt;" vertex="1">
+          <mxGeometry height="80" width="390" x="770" y="-560" as="geometry" />
+        </mxCell>
+        <mxCell id="LWgNlzLof6IhD-hw90fP-65" edge="1" parent="1" source="LWgNlzLof6IhD-hw90fP-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="LWgNlzLof6IhD-hw90fP-62">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LWgNlzLof6IhD-hw90fP-66" edge="1" parent="1" source="LWgNlzLof6IhD-hw90fP-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="LWgNlzLof6IhD-hw90fP-63">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LWgNlzLof6IhD-hw90fP-67" edge="1" parent="1" source="LWgNlzLof6IhD-hw90fP-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="LWgNlzLof6IhD-hw90fP-64">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LWgNlzLof6IhD-hw90fP-54" parent="1" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 21px;&quot;&gt;个人定时任务或手动触发的任务&lt;/span&gt;" vertex="1">
+          <mxGeometry height="80" width="390" x="1355" y="-560" as="geometry" />
+        </mxCell>
+        <mxCell id="LWgNlzLof6IhD-hw90fP-62" parent="1" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 21px;&quot;&gt;运维&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="120" x="1355" y="-410" as="geometry" />
+        </mxCell>
+        <mxCell id="LWgNlzLof6IhD-hw90fP-63" parent="1" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 21px;&quot;&gt;更新&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="120" x="1490" y="-410" as="geometry" />
+        </mxCell>
+        <mxCell id="LWgNlzLof6IhD-hw90fP-64" parent="1" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 21px;&quot;&gt;拓展&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="120" x="1630" y="-410" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
