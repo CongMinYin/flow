@@ -1667,7 +1667,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="MIMBIaw0al5SafpXrq_s" name="财务报价模型">
-    <mxGraphModel dx="2759" dy="928" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1379" dy="265" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1786,10 +1786,10 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="mdrV9b2LzRLI0c-qzGj3-40" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="订单测算" vertex="1">
-          <mxGeometry height="80" width="120" x="1280" y="40" as="geometry" />
+          <mxGeometry height="80" width="120" x="1150" y="80" as="geometry" />
         </mxCell>
-        <mxCell id="mdrV9b2LzRLI0c-qzGj3-43" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="有无清单？" vertex="1">
-          <mxGeometry height="80" width="80" x="1300" y="170" as="geometry" />
+        <mxCell id="mdrV9b2LzRLI0c-qzGj3-43" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="订单有无清单？" vertex="1">
+          <mxGeometry height="80" width="80" x="1170" y="210" as="geometry" />
         </mxCell>
         <mxCell id="gV5_z4_k4e1Z6EtGvBf4-2" parent="1" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" value="不确定多维表的查询速度，确定大类后，大约在上万行中查询。&lt;div&gt;选择数据库 or 多维表？&lt;/div&gt;" vertex="1">
           <mxGeometry height="110" width="170" x="-90" y="395" as="geometry" />
@@ -1799,6 +1799,9 @@
         </mxCell>
         <mxCell id="gV5_z4_k4e1Z6EtGvBf4-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="销售确认价格" vertex="1">
           <mxGeometry height="60" width="120" x="354" y="920" as="geometry" />
+        </mxCell>
+        <mxCell id="gV5_z4_k4e1Z6EtGvBf4-7" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;需求触发&lt;/h1&gt;&lt;p&gt;1、原料价格变动超过x%的情况下自动触发测算利润情况；&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;2、常规投标：明确产品大类、使用原料，有清晰的折扣/留利点，测算利润情况；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;3、订单类报价：有明确物料清单、使用原料，根据同类产品留利点测算面价报价；&lt;/p&gt;" vertex="1">
+          <mxGeometry height="130" width="460" x="1320" y="70" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
