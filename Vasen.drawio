@@ -1667,14 +1667,14 @@
     </mxGraphModel>
   </diagram>
   <diagram id="MIMBIaw0al5SafpXrq_s" name="财务报价模型">
-    <mxGraphModel dx="2416" dy="1308" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1379" dy="265" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="mdrV9b2LzRLI0c-qzGj3-9" edge="1" parent="1" source="mdrV9b2LzRLI0c-qzGj3-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="mdrV9b2LzRLI0c-qzGj3-2">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="mdrV9b2LzRLI0c-qzGj3-1" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="单个产品&lt;br&gt;&lt;div&gt;&lt;br/&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="mdrV9b2LzRLI0c-qzGj3-1" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="单个产品报价" vertex="1">
           <mxGeometry height="80" width="120" x="354" y="50" as="geometry" />
         </mxCell>
         <mxCell id="mdrV9b2LzRLI0c-qzGj3-10" edge="1" parent="1" source="mdrV9b2LzRLI0c-qzGj3-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="mdrV9b2LzRLI0c-qzGj3-4">
@@ -1708,16 +1708,16 @@
         <mxCell id="mdrV9b2LzRLI0c-qzGj3-23" edge="1" parent="1" source="mdrV9b2LzRLI0c-qzGj3-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="mdrV9b2LzRLI0c-qzGj3-22">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="mdrV9b2LzRLI0c-qzGj3-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="多维表收集数据" vertex="1">
-          <mxGeometry height="60" width="120" x="354" y="420" as="geometry" />
+        <mxCell id="mdrV9b2LzRLI0c-qzGj3-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="多维表收集数据&lt;div&gt;（各部门填写多维表）&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="126" x="351" y="420" as="geometry" />
         </mxCell>
-        <mxCell id="mdrV9b2LzRLI0c-qzGj3-6" parent="1" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" value="触发后限时（难点）" vertex="1">
+        <mxCell id="mdrV9b2LzRLI0c-qzGj3-6" parent="1" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" value="触发后限时，AB岗。&lt;div&gt;难点：A岗无响应，一段时间后，B岗响应&lt;/div&gt;" vertex="1">
           <mxGeometry height="110" width="170" x="550" y="350" as="geometry" />
         </mxCell>
         <mxCell id="mdrV9b2LzRLI0c-qzGj3-13" edge="1" parent="1" source="mdrV9b2LzRLI0c-qzGj3-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="mdrV9b2LzRLI0c-qzGj3-8">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="mdrV9b2LzRLI0c-qzGj3-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="数据归入生产数据库（表）" vertex="1">
+        <mxCell id="mdrV9b2LzRLI0c-qzGj3-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="数据归入多维表" vertex="1">
           <mxGeometry height="60" width="120" x="354" y="530" as="geometry" />
         </mxCell>
         <mxCell id="mdrV9b2LzRLI0c-qzGj3-19" edge="1" parent="1" source="mdrV9b2LzRLI0c-qzGj3-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="mdrV9b2LzRLI0c-qzGj3-18">
@@ -1764,7 +1764,7 @@
         <mxCell id="mdrV9b2LzRLI0c-qzGj3-27" edge="1" parent="1" source="mdrV9b2LzRLI0c-qzGj3-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="mdrV9b2LzRLI0c-qzGj3-25">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="mdrV9b2LzRLI0c-qzGj3-24" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="存在历史数据(表)" vertex="1">
+        <mxCell id="mdrV9b2LzRLI0c-qzGj3-24" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="存在历史数据&lt;div&gt;(多维表/数据库)&lt;/div&gt;" vertex="1">
           <mxGeometry height="60" width="120" x="140" y="420" as="geometry" />
         </mxCell>
         <mxCell id="mdrV9b2LzRLI0c-qzGj3-28" edge="1" parent="1" source="mdrV9b2LzRLI0c-qzGj3-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="mdrV9b2LzRLI0c-qzGj3-30">
@@ -1776,7 +1776,7 @@
             <mxPoint x="200.28571428571422" y="1006.0952845982143" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="mdrV9b2LzRLI0c-qzGj3-25" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="直接返回某项数据？" vertex="1">
+        <mxCell id="mdrV9b2LzRLI0c-qzGj3-25" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="回复产品历史报价数据" vertex="1">
           <mxGeometry height="60" width="120" x="140" y="530" as="geometry" />
         </mxCell>
         <mxCell id="mdrV9b2LzRLI0c-qzGj3-30" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="结束" vertex="1">
@@ -1788,14 +1788,11 @@
         <mxCell id="mdrV9b2LzRLI0c-qzGj3-40" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="订单测算" vertex="1">
           <mxGeometry height="80" width="120" x="1280" y="40" as="geometry" />
         </mxCell>
-        <mxCell id="mdrV9b2LzRLI0c-qzGj3-41" parent="1" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" value="的什么动作？" vertex="1">
-          <mxGeometry height="110" width="170" x="550" y="10" as="geometry" />
-        </mxCell>
-        <mxCell id="mdrV9b2LzRLI0c-qzGj3-42" edge="1" parent="1" source="mdrV9b2LzRLI0c-qzGj3-1" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.16;entryY=0.55;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;endArrow=none;endFill=0;" target="mdrV9b2LzRLI0c-qzGj3-41">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
         <mxCell id="mdrV9b2LzRLI0c-qzGj3-43" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="有无清单？" vertex="1">
           <mxGeometry height="80" width="80" x="1300" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="gV5_z4_k4e1Z6EtGvBf4-2" parent="1" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" value="不确定多维表的查询速度，确定大类后，大约在上万行中查询。&lt;div&gt;选择数据库 or 多维表？&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="170" x="-90" y="395" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
