@@ -1667,7 +1667,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="MIMBIaw0al5SafpXrq_s" name="财务报价模型">
-    <mxGraphModel dx="2191" dy="655" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2759" dy="928" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1850,11 +1850,47 @@
         <mxCell id="gV5_z4_k4e1Z6EtGvBf4-16" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="无清单订单有相同价格档次历史版本" vertex="1">
           <mxGeometry height="130" width="120" x="920" y="495" as="geometry" />
         </mxCell>
+        <mxCell id="gV5_z4_k4e1Z6EtGvBf4-27" edge="1" parent="1" source="gV5_z4_k4e1Z6EtGvBf4-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="gV5_z4_k4e1Z6EtGvBf4-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="gV5_z4_k4e1Z6EtGvBf4-19" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="根据测算多维表底稿计算（采用历史最接近原料价格）" vertex="1">
           <mxGeometry height="60" width="160" x="1130" y="530" as="geometry" />
         </mxCell>
+        <mxCell id="gV5_z4_k4e1Z6EtGvBf4-32" edge="1" parent="1" source="gV5_z4_k4e1Z6EtGvBf4-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="gV5_z4_k4e1Z6EtGvBf4-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="gV5_z4_k4e1Z6EtGvBf4-22" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="根据历史版本报价折率" vertex="1">
           <mxGeometry height="60" width="140" x="910" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="gV5_z4_k4e1Z6EtGvBf4-29" edge="1" parent="1" source="gV5_z4_k4e1Z6EtGvBf4-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="gV5_z4_k4e1Z6EtGvBf4-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gV5_z4_k4e1Z6EtGvBf4-26" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="如果销售不接受，手工按准确的原料价格输入进去计算" vertex="1">
+          <mxGeometry height="60" width="160" x="1130" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="gV5_z4_k4e1Z6EtGvBf4-33" edge="1" parent="1" source="gV5_z4_k4e1Z6EtGvBf4-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="gV5_z4_k4e1Z6EtGvBf4-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gV5_z4_k4e1Z6EtGvBf4-28" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="计算折率和净利率" vertex="1">
+          <mxGeometry height="60" width="160" x="1130" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="gV5_z4_k4e1Z6EtGvBf4-36" edge="1" parent="1" source="gV5_z4_k4e1Z6EtGvBf4-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="gV5_z4_k4e1Z6EtGvBf4-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gV5_z4_k4e1Z6EtGvBf4-31" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#A680B8);" value="销售审核" vertex="1">
+          <mxGeometry height="60" width="160" x="1130" y="910" as="geometry" />
+        </mxCell>
+        <mxCell id="gV5_z4_k4e1Z6EtGvBf4-38" edge="1" parent="1" source="gV5_z4_k4e1Z6EtGvBf4-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="gV5_z4_k4e1Z6EtGvBf4-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gV5_z4_k4e1Z6EtGvBf4-34" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="归档&lt;div&gt;方式待定：数据库 or 多维表&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="160" x="1130" y="1040" as="geometry" />
+        </mxCell>
+        <mxCell id="gV5_z4_k4e1Z6EtGvBf4-35" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;历史版本存档方式问题&lt;/h1&gt;&lt;p&gt;1、无清单的历史版本存档方式？数据库 or 多维表；&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;2、有清单，将excel填到数据库？&lt;br&gt;&lt;/span&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="110" width="460" x="1360" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="gV5_z4_k4e1Z6EtGvBf4-37" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="结束" vertex="1">
+          <mxGeometry height="80" width="120" x="1150" y="1170" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
