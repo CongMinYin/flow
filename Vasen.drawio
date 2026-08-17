@@ -1667,7 +1667,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="MIMBIaw0al5SafpXrq_s" name="财务报价模型">
-    <mxGraphModel dx="1379" dy="265" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2759" dy="928" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1717,13 +1717,13 @@
         <mxCell id="mdrV9b2LzRLI0c-qzGj3-13" edge="1" parent="1" source="mdrV9b2LzRLI0c-qzGj3-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="mdrV9b2LzRLI0c-qzGj3-8">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="mdrV9b2LzRLI0c-qzGj3-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="数据归入多维表" vertex="1">
+        <mxCell id="mdrV9b2LzRLI0c-qzGj3-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="数据归入生产数据多维表&lt;div&gt;（支持修改）&lt;/div&gt;" vertex="1">
           <mxGeometry height="60" width="120" x="354" y="530" as="geometry" />
         </mxCell>
         <mxCell id="mdrV9b2LzRLI0c-qzGj3-19" edge="1" parent="1" source="mdrV9b2LzRLI0c-qzGj3-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="mdrV9b2LzRLI0c-qzGj3-18">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="mdrV9b2LzRLI0c-qzGj3-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="数据流入多维表测算" vertex="1">
+        <mxCell id="mdrV9b2LzRLI0c-qzGj3-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="数据流入成本测算多维表测算" vertex="1">
           <mxGeometry height="60" width="120" x="354" y="640" as="geometry" />
         </mxCell>
         <mxCell id="mdrV9b2LzRLI0c-qzGj3-17" edge="1" parent="1" source="mdrV9b2LzRLI0c-qzGj3-5" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="mdrV9b2LzRLI0c-qzGj3-6" value="">
@@ -1735,10 +1735,10 @@
         <mxCell id="mdrV9b2LzRLI0c-qzGj3-33" edge="1" parent="1" source="mdrV9b2LzRLI0c-qzGj3-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="mdrV9b2LzRLI0c-qzGj3-20">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="mdrV9b2LzRLI0c-qzGj3-18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="多维表单项公式测算" vertex="1">
+        <mxCell id="mdrV9b2LzRLI0c-qzGj3-18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="多维表公式自动测算" vertex="1">
           <mxGeometry height="60" width="120" x="354" y="740" as="geometry" />
         </mxCell>
-        <mxCell id="mdrV9b2LzRLI0c-qzGj3-32" edge="1" parent="1" source="mdrV9b2LzRLI0c-qzGj3-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="mdrV9b2LzRLI0c-qzGj3-21">
+        <mxCell id="gV5_z4_k4e1Z6EtGvBf4-4" edge="1" parent="1" source="mdrV9b2LzRLI0c-qzGj3-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="gV5_z4_k4e1Z6EtGvBf4-3">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="mdrV9b2LzRLI0c-qzGj3-20" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="财务最终确认" vertex="1">
@@ -1755,23 +1755,23 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="mdrV9b2LzRLI0c-qzGj3-21" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="归档测算底稿" vertex="1">
-          <mxGeometry height="60" width="120" x="354" y="920" as="geometry" />
+        <mxCell id="mdrV9b2LzRLI0c-qzGj3-21" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="测算底稿归档&lt;div&gt;价格归档到报价多维表&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="354" y="1010" as="geometry" />
         </mxCell>
-        <mxCell id="mdrV9b2LzRLI0c-qzGj3-22" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="数据归入生产数据库" vertex="1">
+        <mxCell id="mdrV9b2LzRLI0c-qzGj3-22" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="数据归入生产数据库&lt;div&gt;（只新增，留痕）&lt;/div&gt;" vertex="1">
           <mxGeometry height="60" width="120" x="540" y="530" as="geometry" />
         </mxCell>
         <mxCell id="mdrV9b2LzRLI0c-qzGj3-27" edge="1" parent="1" source="mdrV9b2LzRLI0c-qzGj3-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="mdrV9b2LzRLI0c-qzGj3-25">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="mdrV9b2LzRLI0c-qzGj3-24" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="存在历史数据&lt;div&gt;(多维表/数据库)&lt;/div&gt;" vertex="1">
+        <mxCell id="mdrV9b2LzRLI0c-qzGj3-24" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="存在历史数据&lt;div&gt;(报价多维表/数据库)&lt;/div&gt;" vertex="1">
           <mxGeometry height="60" width="120" x="140" y="420" as="geometry" />
         </mxCell>
         <mxCell id="mdrV9b2LzRLI0c-qzGj3-28" edge="1" parent="1" source="mdrV9b2LzRLI0c-qzGj3-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="mdrV9b2LzRLI0c-qzGj3-30">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="200" y="1010" />
-              <mxPoint x="414" y="1010" />
+              <mxPoint x="200" y="1090" />
+              <mxPoint x="414" y="1090" />
             </Array>
             <mxPoint x="200.28571428571422" y="1006.0952845982143" as="targetPoint" />
           </mxGeometry>
@@ -1780,7 +1780,7 @@
           <mxGeometry height="60" width="120" x="140" y="530" as="geometry" />
         </mxCell>
         <mxCell id="mdrV9b2LzRLI0c-qzGj3-30" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="结束" vertex="1">
-          <mxGeometry height="80" width="120" x="354" y="1040" as="geometry" />
+          <mxGeometry height="80" width="120" x="354" y="1120" as="geometry" />
         </mxCell>
         <mxCell id="mdrV9b2LzRLI0c-qzGj3-44" edge="1" parent="1" source="mdrV9b2LzRLI0c-qzGj3-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="mdrV9b2LzRLI0c-qzGj3-43">
           <mxGeometry relative="1" as="geometry" />
@@ -1793,6 +1793,12 @@
         </mxCell>
         <mxCell id="gV5_z4_k4e1Z6EtGvBf4-2" parent="1" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" value="不确定多维表的查询速度，确定大类后，大约在上万行中查询。&lt;div&gt;选择数据库 or 多维表？&lt;/div&gt;" vertex="1">
           <mxGeometry height="110" width="170" x="-90" y="395" as="geometry" />
+        </mxCell>
+        <mxCell id="gV5_z4_k4e1Z6EtGvBf4-5" edge="1" parent="1" source="gV5_z4_k4e1Z6EtGvBf4-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="mdrV9b2LzRLI0c-qzGj3-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gV5_z4_k4e1Z6EtGvBf4-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="销售确认价格" vertex="1">
+          <mxGeometry height="60" width="120" x="354" y="920" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
