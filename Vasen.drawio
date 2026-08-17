@@ -1804,7 +1804,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="mdrV9b2LzRLI0c-qzGj3-43" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="订单有无清单？" vertex="1">
+        <mxCell id="mdrV9b2LzRLI0c-qzGj3-43" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="人工订单有无清单？" vertex="1">
           <mxGeometry height="80" width="80" x="1170" y="210" as="geometry" />
         </mxCell>
         <mxCell id="gV5_z4_k4e1Z6EtGvBf4-2" parent="1" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" value="不确定多维表的查询速度，确定大类后，大约在上万行中查询。&lt;div&gt;选择数据库 or 多维表？&lt;/div&gt;" vertex="1">
@@ -1887,10 +1887,13 @@
           <mxGeometry height="60" width="160" x="1130" y="1040" as="geometry" />
         </mxCell>
         <mxCell id="gV5_z4_k4e1Z6EtGvBf4-35" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;历史版本存档方式问题&lt;/h1&gt;&lt;p&gt;1、无清单的历史版本存档方式？数据库 or 多维表；&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;2、有清单，将excel填到数据库？&lt;br&gt;&lt;/span&gt;&lt;/p&gt;" vertex="1">
-          <mxGeometry height="110" width="460" x="1360" y="350" as="geometry" />
+          <mxGeometry height="110" width="460" x="1330" y="400" as="geometry" />
         </mxCell>
         <mxCell id="gV5_z4_k4e1Z6EtGvBf4-37" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="结束" vertex="1">
           <mxGeometry height="80" width="120" x="1150" y="1170" as="geometry" />
+        </mxCell>
+        <mxCell id="gV5_z4_k4e1Z6EtGvBf4-39" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;有无清单的特殊情况&lt;/h1&gt;&lt;p&gt;1、数据库中有历史报价，有物料；&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;2、SAP没有物料号，有物料描述&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;关键点：人工可能不知道有历史报价，去数据库里先查询一遍，怎么查的问题。&lt;/span&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="130" width="460" x="1320" y="220" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
